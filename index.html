@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" context="user-scalable=no" />
+        <meta context="text/html;charset=utf-8" http-equiv="Context-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>balletwasm</title>
+        <link
+            rel="stylesheet"
+            href="./static/main.css"
+            type="text/css"
+            media="screen"
+        />
+        <link rel="stylesheet" href="./static/FFFFORWA.ttf" />
+    </head>
+
+    <body onload="document.getElementById('canvas').focus()">
+        <div class="flexbox-container">
+            <div class="flexbox-container">
+                <canvas
+                    id="canvas"
+                    tabindex="0"
+                    height="800"
+                    width="600"
+                ></canvas>
+            </div>
+        </div>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "@assemblyscript/loader": "./node_modules/@assemblyscript/loader/index.js"
+                }
+            }
+        </script>
+
+        <script type="module">
+            import { instantiate } from "@assemblyscript/loader";
+
+            async function main() {
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+
+                canvas.addEventListener("mousedown", (event) => {
+                    wasmModule.exports.shot();
+                });
+                canvas.addEventListener("mousemove", (event) => {
+                    let _x = event.offsetX;
+                    wasmModule.exports.move(_x);
+                });
+                if (!canvas) {
+                    console.error("Canvas element not found!");
+                    return;
+                }
+                if (!ctx) {
+                    console.error("2D context not available!");
+                    return;
+                }
+
+                const canvasHeight = 800;
+                const canvasWidth = 600;
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+
+                const numberOfCircles = 30;
+
+                let wasmModule;
+
+                const imports = {
+                    env: {
+                        // loop
+                        jsRequestAnimationFrame: () => {
+                            window.requestAnimationFrame(() => {
+                                if (
+                                    wasmModule &&
+                                    wasmModule.exports &&
+                                    wasmModule.exports.animationFrameHandler
+                                ) {
+                                    wasmModule.exports.animationFrameHandler();
+                                }
+                            });
+                        },
+                        // clear draw
+                        jsClearRect: (x, y, w, h) => {
+                            ctx.clearRect(x, y, w, h);
+                        },
+                        // draw start
+                        jsBeginPath: () => {
+                            ctx.beginPath();
+                        },
+                        jsArc: (x, y, r, startAngle, endAngle) => {
+                            ctx.arc(x, y, r, startAngle, endAngle);
+                        },
+                        jsMoveTo: (x, y) => {
+                            ctx.moveTo(x, y);
+                        },
+                        jsLineTo: (x, y) => {
+                            ctx.lineTo(x, y);
+                        },
+                        jsLineWidth: (w) => {
+                            ctx.lineWidth = w;
+                        },
+                        jsFill: () => {
+                            ctx.fill();
+                        },
+                        jsFillText: (textPtr, x, y) => {
+                            ctx.fillText(
+                                wasmModule.exports.__getString(textPtr),
+                                x,
+                                y
+                            );
+                        },
+                        jsStroke: () => {
+                            ctx.stroke();
+                        },
+                        jsClosePath: () => {
+                            ctx.closePath();
+                        },
+                        jsSetStrokeStyle: (strokestylePtr) => {
+                            if (wasmModule) {
+                                ctx.strokeStyle =
+                                    wasmModule.exports.__getString(
+                                        strokestylePtr
+                                    );
+                            }
+                        },
+                        jsSetFont: (fontPtr) => {
+                            ctx.font = wasmModule.exports.__getString(fontPtr);
+                        },
+                        jsMoveTo: (x, y) => {
+                            ctx.moveTo(x, y);
+                        },
+                        jsSetFillStyle: (fillStylePtr) => {
+                            if (wasmModule) {
+                                ctx.fillStyle =
+                                    wasmModule.exports.__getString(
+                                        fillStylePtr
+                                    );
+                            }
+                        },
+                        jsLog: (messagePtr) => {
+                            if (wasmModule) {
+                                console.log(
+                                    wasmModule.exports.__getString(messagePtr)
+                                );
+                            }
+                        },
+                        jsDatenow: Date.now,
+                    },
+                };
+
+                wasmModule = await instantiate(
+                    fetch("./build/release.wasm"),
+                    imports
+                );
+
+                // start loop
+                wasmModule.exports.startAnimation();
+            }
+
+            main().catch(console.error);
+        </script>
+    </body>
+</html>

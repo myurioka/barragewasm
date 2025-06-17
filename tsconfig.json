@@ -1,0 +1,16 @@
+{
+    "compileOptions": {
+        "target": "es2023",
+        "experimentalDecorators": true,
+        "lib": [
+            "es2023",
+            "dom"
+        ],
+        "moduleResolution": "bundler",
+        "strict": true,
+    },
+    "extends": "assemblyscript/std/assembly.json",
+    "include": [
+        "./**/*.ts"
+    ]
+}
