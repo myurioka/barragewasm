@@ -10,6 +10,7 @@ Programming Shooting retoro mini game in Typescript & WebAssembly
 
 -   Mouse Operation : Ship Moving
 -   Space key : Operates & Shooting
+-   Special mode: If you don't shoot for a while
 
 ### Requirement
 
