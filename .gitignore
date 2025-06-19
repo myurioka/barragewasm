@@ -1,4 +1,5 @@
 package-lock.json
-node_modules
+node_modules/*
+!node_modue/@assemblyscsaript/loader/index.js
 .npm
 .env
