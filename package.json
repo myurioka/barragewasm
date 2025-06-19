@@ -1,7 +1,8 @@
 {
     "name": "barragewasm",
     "version": "1.0.0",
-    "description": "",
+    "description": "mini shooting game",
+    "main": "index.ts",
     "scripts": {
         "test": "node tests",
         "asbuild:debug": "asc assembly/index.ts --target debug",

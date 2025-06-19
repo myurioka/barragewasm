@@ -46,13 +46,12 @@ declare function jsSetFont(fontPtr: string): void;
 @external("env", "jsDatenow")
 declare function jsDatenow(): i32;
 
-const CANVAS_WIDTH: f32 = 600; // CANVAS WIDTH
-const CANVAS_HEIGHT: f32 = 800; // CNAVAS HEIGHT
+const CANVAS_WIDTH: f32 = 800; // CANVAS WIDTH
+const CANVAS_HEIGHT: f32 = 1000; // CNAVAS HEIGHT
 const BOSS_WIDTH: f32 = 225; // ENEMY BOSS WIDTH for hit judgement
 const BOSS_HEIGHT: f32 = 225; // ENEMY BOSS HEIGHT for hit judgement
 const BOSS_MAX_HP: i32 = 999; // ENEMY BOSS MAX Helath Point
-const MAX_BULLET_NUMBER: i32 = 300; // Number of BULLETS
-const MAX_SHOT_NUMBER: i32 = 100;
+const MAX_BULLET_NUMBER: i32 = 500; // Number of BULLETS
 const BULLET_WIDTH: f32 = 28;
 const BULLET_HEIGHT: f32 = 28;
 const BULLET_STRENGTH: i32 = 2;
@@ -71,7 +70,6 @@ const DEFAULT_COLOR: string = 'rgba(0,128, 0, 1.0)';
 const LIGHT_GREEN_COLOR: string = 'rgba(226,238,197,1.0)';
 const GREEN_DARK_LIGHT: string = 'rgba(17,31,17,1.0)';
 const LIGHT_YELLOR_GREEN: string = 'rgba(168,230,207,1.0)';
-
 
 enum Stage {
     openning,
@@ -285,8 +283,8 @@ class Bullet implements Character {
     }
     draw(): void {
 
-        let _x = this.x as f32;
-        let _y = this.y as f32;
+        let _x = this.x +  BULLET_WIDTH / 2 as f32;
+        let _y = this.y +  BULLET_WIDTH / 2 as f32;
 
         {
             jsBeginPath();
@@ -461,10 +459,10 @@ class Game {
 				// bullet create
 
 				if (this.bullets.length < MAX_BULLET_NUMBER) {
-					const _x = this.bosses[0].x + BOSS_WIDTH / 2;
-					const _y = this.bosses[0].y + BOSS_WIDTH / 2;
+					const _x = this.bosses[0].x + BOSS_WIDTH / 2 - BULLET_WIDTH / 2;
+					const _y = this.bosses[0].y + BOSS_WIDTH / 2 - BULLET_WIDTH / 2;
 					let dx:f32 = ((Math.random() - 0.5) * 4) as f32;
-					let dy:f32 = (Math.random() * 2 + 1) as f32;
+					let dy:f32 = ((Math.random() - 0.5) * 4) as f32;
 					let _bullet = new Bullet(
 						_x,
 						_y,
@@ -488,7 +486,7 @@ class Game {
 
 				// shot create
 
-				if (this.shooting === true && this.shots.length < MAX_SHOT_NUMBER) {
+				if (this.shooting) {
 					const _x = this.ship.x + SHIP_WIDTH / 2;
 					const _y = this.ship.y;
 					let _shot = new Shot(_x, _y, 0, SHOT_SPEED, SHOT_WIDTH, SHOT_HEIGHT, 1);
@@ -613,31 +611,31 @@ class Game {
 				// Draw Title
 		        draw_boss(130, 20);
 				jsSetFont('60px myfont');
-				jsFillText('BARRAGE', 120, 350);
+				jsFillText('BARRAGE', 220, 360);
 				jsSetFillStyle(LIGHT_GREEN_COLOR);
 				jsSetFont('28px myfont');
-				jsFillText('WASM', 240, 410);
+				jsFillText('WASM', 340, 420);
 				jsSetFillStyle(DEFAULT_COLOR);
 				jsSetFont('28px myfont');
-				jsFillText('Click Start', 200, 500);
+				jsFillText('Click Start', 300, 490);
                 draw_ship(CANVAS_WIDTH / 2 - SHIP_WIDTH / 2, CANVAS_HEIGHT - SHIP_HEIGHT - 10.0);
 				break;
 			case Stage.gameover:
 				// Draw Title
 				jsSetFont('60px myfont');
-				jsFillText('GAME OVER', 70, 300);
+				jsFillText('GAME OVER', 180, 360);
 				jsSetFont('28px myfont');
 				jsSetFillStyle(DEFAULT_COLOR);
-				jsFillText('Click ReStart', 180, 400);
+				jsFillText('Click ReStart', 300, 420);
 				break;
 			case Stage.gameclear:
 				// Draw Title
 				jsSetFont('60px myfont');
-				jsFillText('GAME CLEAR', 50, 300);
+				jsFillText('GAME CLEAR', 150, 360);
 				jsSetFillStyle(DEFAULT_COLOR);
 				jsSetFont('28px myfont');
-				jsFillText('Congratuations!', 160, 400);
-				jsFillText(this.getpassedtime() + ' seconds', 200, 480);
+				jsFillText('Congratuations!', 260, 420);
+				jsFillText(this.getpassedtime() + ' seconds', 300, 480);
 				break;
 			case Stage.playing:
 				// Draw boss
@@ -657,6 +655,11 @@ class Game {
 				jsSetFillStyle(LIGHT_GREEN_COLOR);
 				let _str = this.getpassedtime();
 				jsFillText(_str, 30, 50);
+                // Draw Number of Bullets
+				jsSetFont('18px myfont');
+				jsSetFillStyle(LIGHT_GREEN_COLOR);
+				let _bullet_number = this.bullets.length.toString();
+				jsFillText("Bullets: " + _bullet_number, 30, 90);
 		}
 	}
     // time

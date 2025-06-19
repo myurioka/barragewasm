@@ -20,8 +20,8 @@
                 <canvas
                     id="canvas"
                     tabindex="0"
-                    height="800"
-                    width="600"
+                    width="800"
+                    height="1000"
                 ></canvas>
             </div>
         </div>
@@ -57,12 +57,10 @@
                     return;
                 }
 
-                const canvasHeight = 800;
-                const canvasWidth = 600;
+                const canvasWidth = 800;
+                const canvasHeight = 1000;
                 canvas.width = canvasWidth;
                 canvas.height = canvasHeight;
-
-                const numberOfCircles = 30;
 
                 let wasmModule;
 
