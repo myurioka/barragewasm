@@ -97,10 +97,10 @@
  (global $~lib/native/ASC_SHRINK_LEVEL i32 (i32.const 0))
  (global $~lib/builtins/i32.MAX_VALUE i32 (i32.const 2147483647))
  (global $~argumentsLength (mut i32) (i32.const 0))
- (global $~lib/rt/__rtti_base i32 (i32.const 3440))
- (global $~lib/memory/__data_end i32 (i32.const 3524))
- (global $~lib/memory/__stack_pointer (mut i32) (i32.const 36292))
- (global $~lib/memory/__heap_base i32 (i32.const 36292))
+ (global $~lib/rt/__rtti_base i32 (i32.const 3600))
+ (global $~lib/memory/__data_end i32 (i32.const 3684))
+ (global $~lib/memory/__stack_pointer (mut i32) (i32.const 36452))
+ (global $~lib/memory/__heap_base i32 (i32.const 36452))
  (memory $0 1)
  (data $0 (i32.const 12) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00&\00\00\00r\00g\00b\00a\00(\000\00,\001\002\008\00,\00 \000\00,\00 \001\00.\000\00)\00\00\00\00\00\00\00")
  (data $1 (i32.const 76) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00*\00\00\00r\00g\00b\00a\00(\002\002\006\00,\002\003\008\00,\001\009\007\00,\001\00.\000\00)\00\00\00")
@@ -126,22 +126,25 @@
  (data $21 (i32.const 1164) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\1a\00\00\00C\00l\00i\00c\00k\00 \00R\00e\00S\00t\00a\00r\00t\00\00\00")
  (data $22 (i32.const 1212) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\14\00\00\00G\00A\00M\00E\00 \00C\00L\00E\00A\00R\00\00\00\00\00\00\00\00\00")
  (data $23 (i32.const 1260) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\1e\00\00\00C\00o\00n\00g\00r\00a\00t\00u\00a\00t\00i\00o\00n\00s\00!\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data $24 (i32.const 1324) "|\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00d\00\00\00t\00o\00S\00t\00r\00i\00n\00g\00(\00)\00 \00r\00a\00d\00i\00x\00 \00a\00r\00g\00u\00m\00e\00n\00t\00 \00m\00u\00s\00t\00 \00b\00e\00 \00b\00e\00t\00w\00e\00e\00n\00 \002\00 \00a\00n\00d\00 \003\006\00\00\00\00\00\00\00\00\00")
- (data $25 (i32.const 1452) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00&\00\00\00~\00l\00i\00b\00/\00u\00t\00i\00l\00/\00n\00u\00m\00b\00e\00r\00.\00t\00s\00\00\00\00\00\00\00")
- (data $26 (i32.const 1516) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\02\00\00\000\00\00\00\00\00\00\00\00\00\00\00")
- (data $27 (i32.const 1548) "0\000\000\001\000\002\000\003\000\004\000\005\000\006\000\007\000\008\000\009\001\000\001\001\001\002\001\003\001\004\001\005\001\006\001\007\001\008\001\009\002\000\002\001\002\002\002\003\002\004\002\005\002\006\002\007\002\008\002\009\003\000\003\001\003\002\003\003\003\004\003\005\003\006\003\007\003\008\003\009\004\000\004\001\004\002\004\003\004\004\004\005\004\006\004\007\004\008\004\009\005\000\005\001\005\002\005\003\005\004\005\005\005\006\005\007\005\008\005\009\006\000\006\001\006\002\006\003\006\004\006\005\006\006\006\007\006\008\006\009\007\000\007\001\007\002\007\003\007\004\007\005\007\006\007\007\007\008\007\009\008\000\008\001\008\002\008\003\008\004\008\005\008\006\008\007\008\008\008\009\009\000\009\001\009\002\009\003\009\004\009\005\009\006\009\007\009\008\009\009\00")
- (data $28 (i32.const 1948) "\1c\04\00\00\00\00\00\00\00\00\00\00\02\00\00\00\00\04\00\000\000\000\001\000\002\000\003\000\004\000\005\000\006\000\007\000\008\000\009\000\00a\000\00b\000\00c\000\00d\000\00e\000\00f\001\000\001\001\001\002\001\003\001\004\001\005\001\006\001\007\001\008\001\009\001\00a\001\00b\001\00c\001\00d\001\00e\001\00f\002\000\002\001\002\002\002\003\002\004\002\005\002\006\002\007\002\008\002\009\002\00a\002\00b\002\00c\002\00d\002\00e\002\00f\003\000\003\001\003\002\003\003\003\004\003\005\003\006\003\007\003\008\003\009\003\00a\003\00b\003\00c\003\00d\003\00e\003\00f\004\000\004\001\004\002\004\003\004\004\004\005\004\006\004\007\004\008\004\009\004\00a\004\00b\004\00c\004\00d\004\00e\004\00f\005\000\005\001\005\002\005\003\005\004\005\005\005\006\005\007\005\008\005\009\005\00a\005\00b\005\00c\005\00d\005\00e\005\00f\006\000\006\001\006\002\006\003\006\004\006\005\006\006\006\007\006\008\006\009\006\00a\006\00b\006\00c\006\00d\006\00e\006\00f\007\000\007\001\007\002\007\003\007\004\007\005\007\006\007\007\007\008\007\009\007\00a\007\00b\007\00c\007\00d\007\00e\007\00f\008\000\008\001\008\002\008\003\008\004\008\005\008\006\008\007\008\008\008\009\008\00a\008\00b\008\00c\008\00d\008\00e\008\00f\009\000\009\001\009\002\009\003\009\004\009\005\009\006\009\007\009\008\009\009\009\00a\009\00b\009\00c\009\00d\009\00e\009\00f\00a\000\00a\001\00a\002\00a\003\00a\004\00a\005\00a\006\00a\007\00a\008\00a\009\00a\00a\00a\00b\00a\00c\00a\00d\00a\00e\00a\00f\00b\000\00b\001\00b\002\00b\003\00b\004\00b\005\00b\006\00b\007\00b\008\00b\009\00b\00a\00b\00b\00b\00c\00b\00d\00b\00e\00b\00f\00c\000\00c\001\00c\002\00c\003\00c\004\00c\005\00c\006\00c\007\00c\008\00c\009\00c\00a\00c\00b\00c\00c\00c\00d\00c\00e\00c\00f\00d\000\00d\001\00d\002\00d\003\00d\004\00d\005\00d\006\00d\007\00d\008\00d\009\00d\00a\00d\00b\00d\00c\00d\00d\00d\00e\00d\00f\00e\000\00e\001\00e\002\00e\003\00e\004\00e\005\00e\006\00e\007\00e\008\00e\009\00e\00a\00e\00b\00e\00c\00e\00d\00e\00e\00e\00f\00f\000\00f\001\00f\002\00f\003\00f\004\00f\005\00f\006\00f\007\00f\008\00f\009\00f\00a\00f\00b\00f\00c\00f\00d\00f\00e\00f\00f\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data $29 (i32.const 3004) "\\\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00H\00\00\000\001\002\003\004\005\006\007\008\009\00a\00b\00c\00d\00e\00f\00g\00h\00i\00j\00k\00l\00m\00n\00o\00p\00q\00r\00s\00t\00u\00v\00w\00x\00y\00z\00\00\00\00\00")
- (data $30 (i32.const 3100) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\04\00\00\000\000\00\00\00\00\00\00\00\00\00")
- (data $31 (i32.const 3132) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data $32 (i32.const 3164) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\02\00\00\00.\00\00\00\00\00\00\00\00\00\00\00")
- (data $33 (i32.const 3196) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\n\00\00\00 \00s\00e\00c\00.\00\00\00")
- (data $34 (i32.const 3228) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\06\00\00\00 \00/\00 \00\00\00\00\00\00\00")
- (data $35 (i32.const 3260) "\1c\00\00\00\03\00\00\00\00\00\00\00\13\00\00\00\0c\00\00\00\00\00\00\00\b0\0c\00\00\00\00\00\00")
- (data $36 (i32.const 3292) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\16\00\00\001\002\00p\00x\00 \00m\00y\00f\00o\00n\00t\00\00\00\00\00\00\00")
- (data $37 (i32.const 3340) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\16\00\00\001\008\00p\00x\00 \00m\00y\00f\00o\00n\00t\00\00\00\00\00\00\00")
- (data $38 (i32.const 3388) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\12\00\00\00B\00u\00l\00l\00e\00t\00s\00:\00 \00\00\00\00\00\00\00\00\00\00\00")
- (data $39 (i32.const 3440) "\14\00\00\00 \00\00\00 \00\00\00 \00\00\00\00\00\00\00\00\00\00\00 \00\00\00 \00\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02\t\00\00 \00\00\00 \00\00\00\04A\00\00")
+ (data $24 (i32.const 1324) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\"\00\00\00Y\00o\00u\00r\00 \00c\00l\00e\00a\00r\00 \00t\00i\00m\00e\00:\00 \00\00\00\00\00\00\00\00\00\00\00")
+ (data $25 (i32.const 1388) "|\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00d\00\00\00t\00o\00S\00t\00r\00i\00n\00g\00(\00)\00 \00r\00a\00d\00i\00x\00 \00a\00r\00g\00u\00m\00e\00n\00t\00 \00m\00u\00s\00t\00 \00b\00e\00 \00b\00e\00t\00w\00e\00e\00n\00 \002\00 \00a\00n\00d\00 \003\006\00\00\00\00\00\00\00\00\00")
+ (data $26 (i32.const 1516) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00&\00\00\00~\00l\00i\00b\00/\00u\00t\00i\00l\00/\00n\00u\00m\00b\00e\00r\00.\00t\00s\00\00\00\00\00\00\00")
+ (data $27 (i32.const 1580) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\02\00\00\000\00\00\00\00\00\00\00\00\00\00\00")
+ (data $28 (i32.const 1612) "0\000\000\001\000\002\000\003\000\004\000\005\000\006\000\007\000\008\000\009\001\000\001\001\001\002\001\003\001\004\001\005\001\006\001\007\001\008\001\009\002\000\002\001\002\002\002\003\002\004\002\005\002\006\002\007\002\008\002\009\003\000\003\001\003\002\003\003\003\004\003\005\003\006\003\007\003\008\003\009\004\000\004\001\004\002\004\003\004\004\004\005\004\006\004\007\004\008\004\009\005\000\005\001\005\002\005\003\005\004\005\005\005\006\005\007\005\008\005\009\006\000\006\001\006\002\006\003\006\004\006\005\006\006\006\007\006\008\006\009\007\000\007\001\007\002\007\003\007\004\007\005\007\006\007\007\007\008\007\009\008\000\008\001\008\002\008\003\008\004\008\005\008\006\008\007\008\008\008\009\009\000\009\001\009\002\009\003\009\004\009\005\009\006\009\007\009\008\009\009\00")
+ (data $29 (i32.const 2012) "\1c\04\00\00\00\00\00\00\00\00\00\00\02\00\00\00\00\04\00\000\000\000\001\000\002\000\003\000\004\000\005\000\006\000\007\000\008\000\009\000\00a\000\00b\000\00c\000\00d\000\00e\000\00f\001\000\001\001\001\002\001\003\001\004\001\005\001\006\001\007\001\008\001\009\001\00a\001\00b\001\00c\001\00d\001\00e\001\00f\002\000\002\001\002\002\002\003\002\004\002\005\002\006\002\007\002\008\002\009\002\00a\002\00b\002\00c\002\00d\002\00e\002\00f\003\000\003\001\003\002\003\003\003\004\003\005\003\006\003\007\003\008\003\009\003\00a\003\00b\003\00c\003\00d\003\00e\003\00f\004\000\004\001\004\002\004\003\004\004\004\005\004\006\004\007\004\008\004\009\004\00a\004\00b\004\00c\004\00d\004\00e\004\00f\005\000\005\001\005\002\005\003\005\004\005\005\005\006\005\007\005\008\005\009\005\00a\005\00b\005\00c\005\00d\005\00e\005\00f\006\000\006\001\006\002\006\003\006\004\006\005\006\006\006\007\006\008\006\009\006\00a\006\00b\006\00c\006\00d\006\00e\006\00f\007\000\007\001\007\002\007\003\007\004\007\005\007\006\007\007\007\008\007\009\007\00a\007\00b\007\00c\007\00d\007\00e\007\00f\008\000\008\001\008\002\008\003\008\004\008\005\008\006\008\007\008\008\008\009\008\00a\008\00b\008\00c\008\00d\008\00e\008\00f\009\000\009\001\009\002\009\003\009\004\009\005\009\006\009\007\009\008\009\009\009\00a\009\00b\009\00c\009\00d\009\00e\009\00f\00a\000\00a\001\00a\002\00a\003\00a\004\00a\005\00a\006\00a\007\00a\008\00a\009\00a\00a\00a\00b\00a\00c\00a\00d\00a\00e\00a\00f\00b\000\00b\001\00b\002\00b\003\00b\004\00b\005\00b\006\00b\007\00b\008\00b\009\00b\00a\00b\00b\00b\00c\00b\00d\00b\00e\00b\00f\00c\000\00c\001\00c\002\00c\003\00c\004\00c\005\00c\006\00c\007\00c\008\00c\009\00c\00a\00c\00b\00c\00c\00c\00d\00c\00e\00c\00f\00d\000\00d\001\00d\002\00d\003\00d\004\00d\005\00d\006\00d\007\00d\008\00d\009\00d\00a\00d\00b\00d\00c\00d\00d\00d\00e\00d\00f\00e\000\00e\001\00e\002\00e\003\00e\004\00e\005\00e\006\00e\007\00e\008\00e\009\00e\00a\00e\00b\00e\00c\00e\00d\00e\00e\00e\00f\00f\000\00f\001\00f\002\00f\003\00f\004\00f\005\00f\006\00f\007\00f\008\00f\009\00f\00a\00f\00b\00f\00c\00f\00d\00f\00e\00f\00f\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data $30 (i32.const 3068) "\\\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00H\00\00\000\001\002\003\004\005\006\007\008\009\00a\00b\00c\00d\00e\00f\00g\00h\00i\00j\00k\00l\00m\00n\00o\00p\00q\00r\00s\00t\00u\00v\00w\00x\00y\00z\00\00\00\00\00")
+ (data $31 (i32.const 3164) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\04\00\00\000\000\00\00\00\00\00\00\00\00\00")
+ (data $32 (i32.const 3196) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data $33 (i32.const 3228) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\02\00\00\00.\00\00\00\00\00\00\00\00\00\00\00")
+ (data $34 (i32.const 3260) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\06\00\00\00 \00s\00.\00\00\00\00\00\00\00")
+ (data $35 (i32.const 3292) "<\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00$\00\00\00M\00a\00x\00 \00p\00r\00o\00c\00e\00s\00s\00 \00t\00i\00m\00e\00:\00 \00\00\00\00\00\00\00\00\00")
+ (data $36 (i32.const 3356) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\08\00\00\00 \00m\00s\00.\00\00\00\00\00")
+ (data $37 (i32.const 3388) "\1c\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\06\00\00\00 \00/\00 \00\00\00\00\00\00\00")
+ (data $38 (i32.const 3420) "\1c\00\00\00\03\00\00\00\00\00\00\00\13\00\00\00\0c\00\00\00\00\00\00\00P\r\00\00\00\00\00\00")
+ (data $39 (i32.const 3452) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\16\00\00\001\002\00p\00x\00 \00m\00y\00f\00o\00n\00t\00\00\00\00\00\00\00")
+ (data $40 (i32.const 3500) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\16\00\00\001\008\00p\00x\00 \00m\00y\00f\00o\00n\00t\00\00\00\00\00\00\00")
+ (data $41 (i32.const 3548) ",\00\00\00\00\00\00\00\00\00\00\00\02\00\00\00\12\00\00\00B\00u\00l\00l\00e\00t\00s\00:\00 \00\00\00\00\00\00\00\00\00\00\00")
+ (data $42 (i32.const 3600) "\14\00\00\00 \00\00\00 \00\00\00 \00\00\00\00\00\00\00\00\00\00\00 \00\00\00 \00\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02\t\00\00 \00\00\00 \00\00\00\04A\00\00")
  (table $0 1 1 funcref)
  (elem $0 (i32.const 1))
  (export "animationFrameHandler" (func $assembly/index/animationFrameHandler))
@@ -2610,6 +2613,15 @@
   local.get $passedminisecondtime
   i32.store offset=44
  )
+ (func $assembly/index/Game#get:passedminisecondtime (param $this i32) (result i32)
+  local.get $this
+  i32.load offset=44
+ )
+ (func $assembly/index/Game#set:maxpassedminisecondtime (param $this i32) (param $maxpassedminisecondtime i32)
+  local.get $this
+  local.get $maxpassedminisecondtime
+  i32.store offset=48
+ )
  (func $assembly/index/Boss#set:x (param $this i32) (param $x f32)
   local.get $this
   local.get $x
@@ -2751,10 +2763,6 @@
  (func $assembly/index/Game#get:startsecondtime (param $this i32) (result i32)
   local.get $this
   i32.load offset=32
- )
- (func $assembly/index/Game#get:passedsecondtime (param $this i32) (result i32)
-  local.get $this
-  i32.load offset=40
  )
  (func $assembly/index/Game#get:bullets (param $this i32) (result i32)
   local.get $this
@@ -3123,6 +3131,14 @@
   local.get $this
   i32.load offset=24
  )
+ (func $assembly/index/Game#get:maxpassedminisecondtime (param $this i32) (result i32)
+  local.get $this
+  i32.load offset=48
+ )
+ (func $assembly/index/Game#get:passedsecondtime (param $this i32) (result i32)
+  local.get $this
+  i32.load offset=40
+ )
  (func $~lib/util/number/decimalCount32 (param $value i32) (result i32)
   local.get $value
   i32.const 100000
@@ -3213,14 +3229,14 @@
     i32.const 100
     i32.rem_u
     local.set $d2
-    i32.const 1548
+    i32.const 1612
     local.get $d1
     i32.const 2
     i32.shl
     i32.add
     i64.load32_u
     local.set $digits1
-    i32.const 1548
+    i32.const 1612
     local.get $d2
     i32.const 2
     i32.shl
@@ -3263,7 +3279,7 @@
    i32.const 2
    i32.sub
    local.set $offset
-   i32.const 1548
+   i32.const 1612
    local.get $d1|10
    i32.const 2
    i32.shl
@@ -3286,7 +3302,7 @@
    i32.const 2
    i32.sub
    local.set $offset
-   i32.const 1548
+   i32.const 1612
    local.get $num
    i32.const 2
    i32.shl
@@ -3333,7 +3349,7 @@
     i32.const 1
     i32.shl
     i32.add
-    i32.const 1968
+    i32.const 2032
     local.get $num
     i32.wrap_i64
     i32.const 255
@@ -3355,7 +3371,7 @@
   i32.and
   if
    local.get $buffer
-   i32.const 1968
+   i32.const 2032
    local.get $num
    i32.wrap_i64
    i32.const 6
@@ -3478,7 +3494,7 @@
     i32.const 1
     i32.shl
     i32.add
-    i32.const 3024
+    i32.const 3088
     local.get $num
     local.get $mask
     i64.and
@@ -3512,7 +3528,7 @@
     i32.const 1
     i32.shl
     i32.add
-    i32.const 3024
+    i32.const 3088
     local.get $num
     local.get $q
     local.get $base
@@ -3538,10 +3554,6 @@
   local.get $radix
   call $~lib/util/number/itoa32
   return
- )
- (func $assembly/index/Game#get:passedminisecondtime (param $this i32) (result i32)
-  local.get $this
-  i32.load offset=44
  )
  (func $~lib/rt/common/OBJECT#get:rtSize (param $this i32) (result i32)
   local.get $this
@@ -3945,10 +3957,10 @@
   i32.const 288
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 1968
+  i32.const 2032
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 3024
+  i32.const 3088
   local.get $0
   call $~lib/rt/itcms/__visit
  )
@@ -4222,8 +4234,8 @@
   global.get $~lib/memory/__data_end
   i32.lt_s
   if
-   i32.const 36320
-   i32.const 36368
+   i32.const 36480
+   i32.const 36528
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -5273,7 +5285,7 @@
   i32.eqz
   if
    global.get $~lib/memory/__stack_pointer
-   i32.const 48
+   i32.const 52
    i32.const 4
    call $~lib/rt/itcms/__new
    local.tee $this
@@ -5375,6 +5387,14 @@
   local.get $2
   i32.const 0
   call $assembly/index/Game#set:passedminisecondtime
+  local.get $this
+  local.set $2
+  global.get $~lib/memory/__stack_pointer
+  local.get $2
+  i32.store offset=4
+  local.get $2
+  i32.const 0
+  call $assembly/index/Game#set:maxpassedminisecondtime
   local.get $this
   local.set $2
   global.get $~lib/memory/__stack_pointer
@@ -5536,6 +5556,20 @@
   local.get $2
   call $assembly/index/Game#get:startminisecondtime
   call $assembly/index/Game#set:passedminisecondtime
+  local.get $this
+  local.set $2
+  global.get $~lib/memory/__stack_pointer
+  local.get $2
+  i32.store offset=4
+  local.get $2
+  local.get $this
+  local.set $2
+  global.get $~lib/memory/__stack_pointer
+  local.get $2
+  i32.store offset=8
+  local.get $2
+  call $assembly/index/Game#get:passedminisecondtime
+  call $assembly/index/Game#set:maxpassedminisecondtime
   global.get $~lib/memory/__stack_pointer
   i32.const 0
   f32.const 180
@@ -7475,23 +7509,26 @@
  )
  (func $assembly/index/Game#update (param $this i32)
   (local $1 i32)
+  (local $_startprocesssecondtime i32)
   (local $_x f32)
   (local $_y f32)
   (local $dx f32)
   (local $dy f32)
   (local $_bullet i32)
   (local $i i32)
-  (local $_x|8 f32)
-  (local $_y|9 f32)
+  (local $_x|9 f32)
+  (local $_y|10 f32)
   (local $_shot i32)
-  (local $i|11 i32)
   (local $i|12 i32)
   (local $i|13 i32)
+  (local $i|14 i32)
   (local $j i32)
-  (local $i|15 i32)
-  (local $j|16 i32)
-  (local $17 i32)
+  (local $i|16 i32)
+  (local $j|17 i32)
   (local $18 i32)
+  (local $19 i32)
+  (local $20 i32)
+  (local $21 i32)
   global.get $~lib/memory/__stack_pointer
   i32.const 28
   i32.sub
@@ -7507,11 +7544,11 @@
      block $case1|0
       block $case0|0
        local.get $this
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store
-       local.get $18
+       local.get $21
        call $assembly/index/Game#get:stage
        local.set $1
        local.get $1
@@ -7537,86 +7574,76 @@
     br $break|0
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/jsDatenow
    i32.const 1000
    i32.div_s
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=4
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:startsecondtime
    i32.sub
    call $assembly/index/Game#set:passedsecondtime
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/jsDatenow
-   call $assembly/index/Game#set:passedminisecondtime
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
-   i32.store
-   local.get $18
-   call $assembly/index/Game#get:passedsecondtime
-   global.get $assembly/index/LIMIT_TIME
-   i32.ge_s
-   if
-    local.get $this
-    local.set $18
-    global.get $~lib/memory/__stack_pointer
-    local.get $18
-    i32.store
-    local.get $18
-    global.get $assembly/index/Stage.gameover
-    call $assembly/index/Game#set:stage
-    br $break|0
-   end
-   local.get $this
-   local.set $18
-   global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=4
-   local.get $18
-   call $assembly/index/Game#get:bullets
-   local.set $18
+   local.get $21
+   call $assembly/index/Game#get:startminisecondtime
+   i32.sub
+   call $assembly/index/Game#set:passedminisecondtime
+   call $assembly/index/jsDatenow
+   local.set $_startprocesssecondtime
+   local.get $this
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
+   i32.store offset=4
+   local.get $21
+   call $assembly/index/Game#get:bullets
+   local.set $21
+   global.get $~lib/memory/__stack_pointer
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $~lib/array/Array<assembly/index/Bullet>#get:length
    global.get $assembly/index/MAX_BULLET_NUMBER
    i32.lt_s
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bosses
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     i32.const 0
     call $~lib/array/Array<assembly/index/Boss>#__get
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Boss#get:x
     global.get $assembly/index/BOSS_WIDTH
     f32.const 2
@@ -7628,24 +7655,24 @@
     f32.sub
     local.set $_x
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bosses
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     i32.const 0
     call $~lib/array/Array<assembly/index/Boss>#__get
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Boss#get:y
     global.get $assembly/index/BOSS_WIDTH
     f32.const 2
@@ -7683,23 +7710,23 @@
     local.tee $_bullet
     i32.store offset=12
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bullets
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     local.get $_bullet
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Bullet>#push
     drop
    end
@@ -7708,99 +7735,99 @@
    loop $for-loop|1
     local.get $i
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bullets
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Bullet>#get:length
     i32.lt_s
     if
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:bullets
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
+     local.get $21
      local.get $i
      call $~lib/array/Array<assembly/index/Bullet>#__get
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      call $assembly/index/Bullet#update
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:bullets
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
+     local.get $21
      local.get $i
      call $~lib/array/Array<assembly/index/Bullet>#__get
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      call $assembly/index/Bullet#exit
      if (result i32)
       i32.const 1
      else
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=8
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:bullets
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
+      local.get $21
       local.get $i
       call $~lib/array/Array<assembly/index/Bullet>#__get
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
+      local.get $21
       call $assembly/index/Bullet#get:hp
       i32.const 0
       i32.le_s
      end
      if
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:bullets
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
+      local.get $21
       local.get $i
       i32.const 1
       call $~lib/array/Array<assembly/index/Bullet>#splice
@@ -7814,49 +7841,49 @@
     end
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:shooting
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:x
     global.get $assembly/index/SHIP_WIDTH
     f32.const 2
     f32.div
     f32.add
-    local.set $_x|8
+    local.set $_x|9
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:y
-    local.set $_y|9
+    local.set $_y|10
     global.get $~lib/memory/__stack_pointer
     i32.const 0
-    local.get $_x|8
-    local.get $_y|9
+    local.get $_x|9
+    local.get $_y|10
     f32.const 0
     global.get $assembly/index/SHOT_SPEED
     global.get $assembly/index/SHOT_WIDTH
@@ -7866,23 +7893,23 @@
     local.tee $_shot
     i32.store offset=16
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:super_time
     i32.const 0
     i32.gt_s
     if
      global.get $~lib/memory/__stack_pointer
      i32.const 0
-     local.get $_x|8
+     local.get $_x|9
      global.get $assembly/index/SUPER_SHOT_WIDTH
      f32.const 2
      f32.div
      f32.sub
-     local.get $_y|9
+     local.get $_y|10
      f32.const 0
      global.get $assembly/index/SHOT_SPEED
      global.get $assembly/index/SUPER_SHOT_WIDTH
@@ -7892,237 +7919,237 @@
      local.tee $_shot
      i32.store offset=16
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:super_time
      i32.const 1
      i32.sub
      call $assembly/index/Game#set:super_time
     end
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:shots
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     local.get $_shot
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Shot>#push
     drop
    end
    i32.const 0
-   local.set $i|11
+   local.set $i|12
    loop $for-loop|2
-    local.get $i|11
+    local.get $i|12
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:shots
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Shot>#get:length
     i32.lt_s
     if
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:shots
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
-     local.get $i|11
+     local.get $21
+     local.get $i|12
      call $~lib/array/Array<assembly/index/Shot>#__get
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      call $assembly/index/Shot#update
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:shots
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
-     local.get $i|11
+     local.get $21
+     local.get $i|12
      call $~lib/array/Array<assembly/index/Shot>#__get
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      call $assembly/index/Shot#exit
      if (result i32)
       i32.const 1
      else
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=8
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:shots
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
-      local.get $i|11
+      local.get $21
+      local.get $i|12
       call $~lib/array/Array<assembly/index/Shot>#__get
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
+      local.get $21
       call $assembly/index/Shot#get:hp
       i32.const 0
       i32.le_s
      end
      if
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:shots
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
-      local.get $i|11
+      local.get $21
+      local.get $i|12
       i32.const 1
       call $~lib/array/Array<assembly/index/Shot>#splice
       drop
-     end
-     local.get $i|11
-     i32.const 1
-     i32.add
-     local.set $i|11
-     br $for-loop|2
-    end
-   end
-   i32.const 0
-   local.set $i|12
-   loop $for-loop|3
-    local.get $i|12
-    local.get $this
-    local.set $18
-    global.get $~lib/memory/__stack_pointer
-    local.get $18
-    i32.store offset=4
-    local.get $18
-    call $assembly/index/Game#get:bullets
-    local.set $18
-    global.get $~lib/memory/__stack_pointer
-    local.get $18
-    i32.store
-    local.get $18
-    call $~lib/array/Array<assembly/index/Bullet>#get:length
-    i32.lt_s
-    if
-     local.get $this
-     local.set $18
-     global.get $~lib/memory/__stack_pointer
-     local.get $18
-     i32.store offset=20
-     local.get $18
-     call $assembly/index/Game#get:bullets
-     local.set $18
-     global.get $~lib/memory/__stack_pointer
-     local.get $18
-     i32.store offset=8
-     local.get $18
-     local.get $i|12
-     call $~lib/array/Array<assembly/index/Bullet>#__get
-     local.set $18
-     global.get $~lib/memory/__stack_pointer
-     local.get $18
-     i32.store
-     local.get $18
-     local.get $this
-     local.set $18
-     global.get $~lib/memory/__stack_pointer
-     local.get $18
-     i32.store offset=8
-     local.get $18
-     call $assembly/index/Game#get:ship
-     local.set $18
-     global.get $~lib/memory/__stack_pointer
-     local.get $18
-     i32.store offset=4
-     local.get $18
-     call $assembly/index/Bullet#hit
-     if
-      local.get $this
-      local.set $18
-      global.get $~lib/memory/__stack_pointer
-      local.get $18
-      i32.store
-      local.get $18
-      global.get $assembly/index/Stage.gameover
-      call $assembly/index/Game#set:stage
      end
      local.get $i|12
      i32.const 1
      i32.add
      local.set $i|12
-     br $for-loop|3
+     br $for-loop|2
     end
    end
    i32.const 0
    local.set $i|13
-   loop $for-loop|4
+   loop $for-loop|3
     local.get $i|13
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bullets
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
+    call $~lib/array/Array<assembly/index/Bullet>#get:length
+    i32.lt_s
+    if
+     local.get $this
+     local.set $21
+     global.get $~lib/memory/__stack_pointer
+     local.get $21
+     i32.store offset=20
+     local.get $21
+     call $assembly/index/Game#get:bullets
+     local.set $21
+     global.get $~lib/memory/__stack_pointer
+     local.get $21
+     i32.store offset=8
+     local.get $21
+     local.get $i|13
+     call $~lib/array/Array<assembly/index/Bullet>#__get
+     local.set $21
+     global.get $~lib/memory/__stack_pointer
+     local.get $21
+     i32.store
+     local.get $21
+     local.get $this
+     local.set $21
+     global.get $~lib/memory/__stack_pointer
+     local.get $21
+     i32.store offset=8
+     local.get $21
+     call $assembly/index/Game#get:ship
+     local.set $21
+     global.get $~lib/memory/__stack_pointer
+     local.get $21
+     i32.store offset=4
+     local.get $21
+     call $assembly/index/Bullet#hit
+     if
+      local.get $this
+      local.set $21
+      global.get $~lib/memory/__stack_pointer
+      local.get $21
+      i32.store
+      local.get $21
+      global.get $assembly/index/Stage.gameover
+      call $assembly/index/Game#set:stage
+     end
+     local.get $i|13
+     i32.const 1
+     i32.add
+     local.set $i|13
+     br $for-loop|3
+    end
+   end
+   i32.const 0
+   local.set $i|14
+   loop $for-loop|4
+    local.get $i|14
+    local.get $this
+    local.set $21
+    global.get $~lib/memory/__stack_pointer
+    local.get $21
+    i32.store offset=4
+    local.get $21
+    call $assembly/index/Game#get:bullets
+    local.set $21
+    global.get $~lib/memory/__stack_pointer
+    local.get $21
+    i32.store
+    local.get $21
     call $~lib/array/Array<assembly/index/Bullet>#get:length
     i32.lt_s
     if
@@ -8131,140 +8158,140 @@
      loop $for-loop|5
       local.get $j
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:shots
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
+      local.get $21
       call $~lib/array/Array<assembly/index/Shot>#get:length
       i32.lt_s
       if
        local.get $this
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=20
-       local.get $18
+       local.get $21
        call $assembly/index/Game#get:bullets
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=8
-       local.get $18
-       local.get $i|13
+       local.get $21
+       local.get $i|14
        call $~lib/array/Array<assembly/index/Bullet>#__get
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store
-       local.get $18
+       local.get $21
        local.get $this
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=20
-       local.get $18
+       local.get $21
        call $assembly/index/Game#get:shots
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=8
-       local.get $18
+       local.get $21
        local.get $j
        call $~lib/array/Array<assembly/index/Shot>#__get
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=4
-       local.get $18
+       local.get $21
        call $assembly/index/Bullet#hit
        if
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:shots
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
+        local.get $21
         local.get $j
         call $~lib/array/Array<assembly/index/Shot>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store
-        local.get $18
+        local.get $21
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=20
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:shots
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
+        local.get $21
         local.get $j
         call $~lib/array/Array<assembly/index/Shot>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
+        local.get $21
         call $assembly/index/Shot#get:hp
         i32.const 1
         i32.sub
         call $assembly/index/Shot#set:hp
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:bullets
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
-        local.get $i|13
+        local.get $21
+        local.get $i|14
         call $~lib/array/Array<assembly/index/Bullet>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store
-        local.get $18
+        local.get $21
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=20
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:bullets
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
-        local.get $i|13
+        local.get $21
+        local.get $i|14
         call $~lib/array/Array<assembly/index/Bullet>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
+        local.get $21
         call $assembly/index/Bullet#get:hp
         i32.const 1
         i32.sub
@@ -8277,294 +8304,294 @@
        br $for-loop|5
       end
      end
-     local.get $i|13
+     local.get $i|14
      i32.const 1
      i32.add
-     local.set $i|13
+     local.set $i|14
      br $for-loop|4
     end
    end
    i32.const 0
-   local.set $i|15
+   local.set $i|16
    loop $for-loop|6
-    local.get $i|15
+    local.get $i|16
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bosses
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Boss>#get:length
     i32.lt_s
     if
      i32.const 0
-     local.set $j|16
+     local.set $j|17
      loop $for-loop|7
-      local.get $j|16
+      local.get $j|17
       local.get $this
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store offset=4
-      local.get $18
+      local.get $21
       call $assembly/index/Game#get:shots
-      local.set $18
+      local.set $21
       global.get $~lib/memory/__stack_pointer
-      local.get $18
+      local.get $21
       i32.store
-      local.get $18
+      local.get $21
       call $~lib/array/Array<assembly/index/Shot>#get:length
       i32.lt_s
       if
        local.get $this
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=20
-       local.get $18
+       local.get $21
        call $assembly/index/Game#get:bosses
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=8
-       local.get $18
-       local.get $i|15
+       local.get $21
+       local.get $i|16
        call $~lib/array/Array<assembly/index/Boss>#__get
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store
-       local.get $18
+       local.get $21
        local.get $this
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=20
-       local.get $18
+       local.get $21
        call $assembly/index/Game#get:shots
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=8
-       local.get $18
-       local.get $j|16
+       local.get $21
+       local.get $j|17
        call $~lib/array/Array<assembly/index/Shot>#__get
-       local.set $18
+       local.set $21
        global.get $~lib/memory/__stack_pointer
-       local.get $18
+       local.get $21
        i32.store offset=4
-       local.get $18
+       local.get $21
        call $assembly/index/Boss#hit
        if
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:shots
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
-        local.get $j|16
+        local.get $21
+        local.get $j|17
         call $~lib/array/Array<assembly/index/Shot>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store
-        local.get $18
+        local.get $21
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=20
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:shots
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
-        local.get $j|16
+        local.get $21
+        local.get $j|17
         call $~lib/array/Array<assembly/index/Shot>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
+        local.get $21
         call $assembly/index/Shot#get:hp
         i32.const 1
         i32.sub
         call $assembly/index/Shot#set:hp
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:bosses
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
-        local.get $i|15
+        local.get $21
+        local.get $i|16
         call $~lib/array/Array<assembly/index/Boss>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store
-        local.get $18
+        local.get $21
         local.get $this
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=20
-        local.get $18
+        local.get $21
         call $assembly/index/Game#get:bosses
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=8
-        local.get $18
-        local.get $i|15
+        local.get $21
+        local.get $i|16
         call $~lib/array/Array<assembly/index/Boss>#__get
-        local.set $18
+        local.set $21
         global.get $~lib/memory/__stack_pointer
-        local.get $18
+        local.get $21
         i32.store offset=4
-        local.get $18
+        local.get $21
         call $assembly/index/Boss#get:hp
         i32.const 1
         i32.sub
         call $assembly/index/Boss#set:hp
        end
-       local.get $j|16
+       local.get $j|17
        i32.const 1
        i32.add
-       local.set $j|16
+       local.set $j|17
        br $for-loop|7
       end
      end
-     local.get $i|15
+     local.get $i|16
      i32.const 1
      i32.add
-     local.set $i|15
+     local.set $i|16
      br $for-loop|6
     end
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=4
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:ship
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Ship#update
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=8
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:bosses
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=4
-   local.get $18
+   local.get $21
    i32.const 0
    call $~lib/array/Array<assembly/index/Boss>#__get
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Boss#update
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=8
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:bosses
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store offset=4
-   local.get $18
+   local.get $21
    i32.const 0
    call $~lib/array/Array<assembly/index/Boss>#__get
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Boss#get:hp
    i32.const 0
    i32.le_s
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bosses
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     i32.const 0
     i32.const 1
     call $~lib/array/Array<assembly/index/Boss>#splice
     drop
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:bosses
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $~lib/array/Array<assembly/index/Boss>#get:length
     i32.const 0
     i32.eq
     if
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      global.get $assembly/index/Stage.gameclear
      call $assembly/index/Game#set:stage
     end
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:shooting
    i32.const 0
    i32.ne
@@ -8572,11 +8599,11 @@
    i32.eq
    if (result i32)
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:super_time
     i32.const 0
     i32.eq
@@ -8585,315 +8612,315 @@
    end
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:wait_time
     i32.const 1
     i32.add
     call $assembly/index/Game#set:wait_time
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:wait_time
    global.get $assembly/index/SUPER_WAIT_TIME
    i32.gt_s
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     global.get $assembly/index/SUPER_TIME
     call $assembly/index/Game#set:super_time
     global.get $~lib/memory/__stack_pointer
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.tee $17
+    local.tee $18
     i32.store offset=24
-    local.get $17
+    local.get $18
     i32.eqz
     if (result i32)
      i32.const 0
     else
-     local.get $17
+     local.get $18
      call $~instanceof|assembly/index/SuperShip
     end
     i32.eqz
     if
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store
-     local.get $18
+     local.get $21
      i32.const 0
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:x
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:y
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:dx
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:dy
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:w
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:h
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:hp
      local.get $this
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=20
-     local.get $18
+     local.get $21
      call $assembly/index/Game#get:ship
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=8
-     local.get $18
+     local.get $21
      call $assembly/index/Ship#get:mouse_x
      call $assembly/index/SuperShip#constructor
-     local.set $18
+     local.set $21
      global.get $~lib/memory/__stack_pointer
-     local.get $18
+     local.get $21
      i32.store offset=4
-     local.get $18
+     local.get $21
      call $assembly/index/Game#set:ship
     end
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:super_time
    i32.const 1
    i32.eq
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     i32.const 0
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:x
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:y
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:dx
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:dy
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:w
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:h
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:hp
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=20
-    local.get $18
+    local.get $21
     call $assembly/index/Game#get:ship
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=8
-    local.get $18
+    local.get $21
     call $assembly/index/Ship#get:mouse_x
     call $assembly/index/Ship#constructor
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store offset=4
-    local.get $18
+    local.get $21
     call $assembly/index/Game#set:ship
    end
    local.get $this
-   local.set $18
+   local.set $21
    global.get $~lib/memory/__stack_pointer
-   local.get $18
+   local.get $21
    i32.store
-   local.get $18
+   local.get $21
    call $assembly/index/Game#get:shooting
    i32.const 0
    i32.ne
@@ -8901,15 +8928,37 @@
    i32.eq
    if
     local.get $this
-    local.set $18
+    local.set $21
     global.get $~lib/memory/__stack_pointer
-    local.get $18
+    local.get $21
     i32.store
-    local.get $18
+    local.get $21
     i32.const 0
     call $assembly/index/Game#set:wait_time
    end
-   br $break|0
+   local.get $this
+   local.set $21
+   global.get $~lib/memory/__stack_pointer
+   local.get $21
+   i32.store
+   local.get $21
+   call $assembly/index/jsDatenow
+   local.get $_startprocesssecondtime
+   i32.sub
+   local.tee $19
+   local.get $this
+   local.set $21
+   global.get $~lib/memory/__stack_pointer
+   local.get $21
+   i32.store offset=4
+   local.get $21
+   call $assembly/index/Game#get:maxpassedminisecondtime
+   local.tee $20
+   local.get $19
+   local.get $20
+   i32.gt_s
+   select
+   call $assembly/index/Game#set:maxpassedminisecondtime
   end
   global.get $~lib/memory/__stack_pointer
   i32.const 28
@@ -9614,7 +9663,7 @@
   i32.const 0
   i32.eq
   if
-   i32.const 3152
+   i32.const 3216
    local.set $6
    global.get $~lib/memory/__stack_pointer
    i32.const 8
@@ -9765,7 +9814,7 @@
   i32.const 0
   i32.le_s
   if
-   i32.const 3152
+   i32.const 3216
    local.set $13
    global.get $~lib/memory/__stack_pointer
    i32.const 8
@@ -9881,7 +9930,7 @@
   local.tee $_minisec
   i32.store offset=8
   global.get $~lib/memory/__stack_pointer
-  i32.const 3120
+  i32.const 3184
   local.set $6
   global.get $~lib/memory/__stack_pointer
   local.get $6
@@ -9907,7 +9956,7 @@
   local.tee $_sec_str
   i32.store offset=20
   global.get $~lib/memory/__stack_pointer
-  i32.const 1536
+  i32.const 1600
   local.set $6
   global.get $~lib/memory/__stack_pointer
   local.get $6
@@ -9939,7 +9988,7 @@
   local.get $6
   i32.store offset=16
   local.get $6
-  i32.const 3184
+  i32.const 3248
   local.set $6
   global.get $~lib/memory/__stack_pointer
   local.get $6
@@ -10000,7 +10049,7 @@
   i32.const 0
   i32.lt_s
   if
-   i32.const 3152
+   i32.const 3216
    local.set $13
    global.get $~lib/memory/__stack_pointer
    i32.const 16
@@ -10021,7 +10070,7 @@
    if (result i32)
     local.get $4
    else
-    i32.const 3152
+    i32.const 3216
    end
    local.set $13
    global.get $~lib/memory/__stack_pointer
@@ -10277,7 +10326,7 @@
   call $~lib/number/I32#toString
   local.tee $2
   i32.store offset=8
-  i32.const 3280
+  i32.const 3440
   local.set $4
   global.get $~lib/memory/__stack_pointer
   local.get $4
@@ -10291,7 +10340,7 @@
   i32.store offset=12
   local.get $4
   call $~lib/staticarray/StaticArray<~lib/string/String>#__uset
-  i32.const 3280
+  i32.const 3440
   local.set $4
   global.get $~lib/memory/__stack_pointer
   local.get $4
@@ -10305,13 +10354,13 @@
   i32.store offset=12
   local.get $4
   call $~lib/staticarray/StaticArray<~lib/string/String>#__uset
-  i32.const 3280
+  i32.const 3440
   local.set $4
   global.get $~lib/memory/__stack_pointer
   local.get $4
   i32.store
   local.get $4
-  i32.const 3152
+  i32.const 3216
   local.set $4
   global.get $~lib/memory/__stack_pointer
   local.get $4
@@ -10320,7 +10369,7 @@
   call $~lib/staticarray/StaticArray<~lib/string/String>#join
   local.tee $_txt
   i32.store offset=16
-  i32.const 3312
+  i32.const 3472
   local.set $4
   global.get $~lib/memory/__stack_pointer
   local.get $4
@@ -10563,13 +10612,13 @@
   (local $_bullet_number i32)
   (local $6 i32)
   global.get $~lib/memory/__stack_pointer
-  i32.const 24
+  i32.const 32
   i32.sub
   global.set $~lib/memory/__stack_pointer
   call $~stack_check
   global.get $~lib/memory/__stack_pointer
   i32.const 0
-  i32.const 24
+  i32.const 32
   memory.fill
   f32.const 0
   f32.const 0
@@ -10728,6 +10777,13 @@
      call $assembly/index/jsFillText
      br $break|0
     end
+    global.get $assembly/index/DEFAULT_COLOR
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store
+    local.get $6
+    call $assembly/index/jsSetFillStyle
     i32.const 912
     local.set $6
     global.get $~lib/memory/__stack_pointer
@@ -10767,19 +10823,31 @@
     f32.const 260
     f32.const 420
     call $assembly/index/jsFillText
-    local.get $this
+    i32.const 1344
     local.set $6
     global.get $~lib/memory/__stack_pointer
     local.get $6
     i32.store offset=12
     local.get $6
+    local.get $this
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=20
+    local.get $6
     call $assembly/index/Game#getpassedtime
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=16
+    local.get $6
+    call $~lib/string/String.__concat
     local.set $6
     global.get $~lib/memory/__stack_pointer
     local.get $6
     i32.store offset=4
     local.get $6
-    i32.const 3216
+    i32.const 3280
     local.set $6
     global.get $~lib/memory/__stack_pointer
     local.get $6
@@ -10791,8 +10859,56 @@
     local.get $6
     i32.store
     local.get $6
-    f32.const 340
+    f32.const 200
     f32.const 500
+    call $assembly/index/jsFillText
+    global.get $assembly/index/LIGHT_GREEN_COLOR
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store
+    local.get $6
+    call $assembly/index/jsSetFillStyle
+    i32.const 3312
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=12
+    local.get $6
+    local.get $this
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=20
+    local.get $6
+    call $assembly/index/Game#get:maxpassedminisecondtime
+    i32.const 10
+    call $~lib/number/I32#toString
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=16
+    local.get $6
+    call $~lib/string/String.__concat
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=4
+    local.get $6
+    i32.const 3376
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store offset=8
+    local.get $6
+    call $~lib/string/String.__concat
+    local.set $6
+    global.get $~lib/memory/__stack_pointer
+    local.get $6
+    i32.store
+    local.get $6
+    f32.const 180
+    f32.const 600
     call $assembly/index/jsFillText
     br $break|0
    end
@@ -10944,7 +11060,7 @@
    local.get $6
    call $assembly/index/Game#getpassedtime
    local.tee $_str
-   i32.store offset=16
+   i32.store offset=24
    local.get $_str
    local.set $6
    global.get $~lib/memory/__stack_pointer
@@ -10954,7 +11070,7 @@
    f32.const 30
    f32.const 50
    call $assembly/index/jsFillText
-   i32.const 3360
+   i32.const 3520
    local.set $6
    global.get $~lib/memory/__stack_pointer
    local.get $6
@@ -10985,8 +11101,8 @@
    i32.const 10
    call $~lib/number/I32#toString
    local.tee $_bullet_number
-   i32.store offset=20
-   i32.const 3408
+   i32.store offset=28
+   i32.const 3568
    local.set $6
    global.get $~lib/memory/__stack_pointer
    local.get $6
@@ -11009,7 +11125,7 @@
    call $assembly/index/jsFillText
   end
   global.get $~lib/memory/__stack_pointer
-  i32.const 24
+  i32.const 32
   i32.add
   global.set $~lib/memory/__stack_pointer
  )
@@ -12101,8 +12217,8 @@
    i32.gt_s
   end
   if
-   i32.const 1344
-   i32.const 1472
+   i32.const 1408
+   i32.const 1536
    i32.const 373
    i32.const 5
    call $~lib/builtins/abort
@@ -12111,7 +12227,7 @@
   local.get $value
   i32.eqz
   if
-   i32.const 1536
+   i32.const 1600
    local.set $14
    global.get $~lib/memory/__stack_pointer
    i32.const 4

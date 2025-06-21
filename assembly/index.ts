@@ -379,6 +379,7 @@ class Game {
 	startminisecondtime: i32;
 	passedsecondtime: i32;
 	passedminisecondtime: i32;
+    maxpassedminisecondtime: i32;
 
 	constructor() {
 		this.stage = Stage.openning;
@@ -403,6 +404,7 @@ class Game {
 		this.startminisecondtime = jsDatenow();
 		this.passedsecondtime = this.startminisecondtime;
 		this.passedminisecondtime = this.startminisecondtime;
+        this.maxpassedminisecondtime = this.passedminisecondtime;
 	    let _boss = new Boss(180, 60, 1, 0, BOSS_WIDTH, BOSS_HEIGHT, BOSS_MAX_HP);
 		this.bosses.push(_boss);
 	}
@@ -432,6 +434,7 @@ class Game {
 		this.startminisecondtime = jsDatenow();
 		this.passedsecondtime = this.startminisecondtime;
 		this.passedminisecondtime = this.startminisecondtime;
+        this.maxpassedminisecondtime = 0;
 	}
     /**
     * mouse evnet
@@ -451,14 +454,8 @@ class Game {
 				// passed time
 
 				this.passedsecondtime = jsDatenow() / 1000 - this.startsecondtime;
-				this.passedminisecondtime = jsDatenow();
-
-				// Game Over
-				if (this.passedsecondtime >= LIMIT_TIME) {
-					this.stage = Stage.gameover;
-					break;
-				}
-
+				this.passedminisecondtime = jsDatenow() - this.startminisecondtime;
+                let _startprocesssecondtime = jsDatenow();
 				// bullet create
 
 				if (this.bullets.length < MAX_BULLET_NUMBER) {
@@ -601,7 +598,8 @@ class Game {
 					this.wait_time = 0;
 				}
 
-				break;
+                // mesure max passed time
+				this.maxpassedminisecondtime = max(jsDatenow() - _startprocesssecondtime, this.maxpassedminisecondtime);
 		}
 	}
 	draw():void {
@@ -633,12 +631,15 @@ class Game {
 				break;
 			case Stage.gameclear:
 				// Draw Title
+				jsSetFillStyle(DEFAULT_COLOR);
 				jsSetFont('60px myfont');
 				jsFillText('GAME CLEAR', 150, 360);
 				jsSetFillStyle(DEFAULT_COLOR);
 				jsSetFont('28px myfont');
 				jsFillText('Congratuations!', 260, 420);
-				jsFillText(this.getpassedtime() + ' sec.', 340, 500);
+				jsFillText('Your clear time: ' + this.getpassedtime() + ' s.', 200, 500);
+				jsSetFillStyle(LIGHT_GREEN_COLOR);
+				jsFillText('Max process time: ' + this.maxpassedminisecondtime.toString() + ' ms.', 180, 600);
 				break;
 			case Stage.playing:
 				// Draw boss

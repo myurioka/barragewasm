@@ -41,6 +41,14 @@
                 const canvas = document.getElementById("canvas");
                 const ctx = canvas.getContext("2d");
 
+                canvas.addEventListener("touchmove", (event) => {
+                    const allTouches = event.touches;
+                    if (allTouches.length > 0) {
+                        const firstTouch = allTouches[0];
+                        const _x = firstTouch.clientX;
+                        wasmModule.exports.move(_x);
+                    }
+                });
                 canvas.addEventListener("mousedown", (event) => {
                     wasmModule.exports.shot();
                 });
