@@ -55,7 +55,7 @@ const MAX_BULLET_NUMBER: i32 = 500; // Number of BULLETS
 const BULLET_WIDTH: f32 = 28;
 const BULLET_HEIGHT: f32 = 28;
 const BULLET_STRENGTH: i32 = 2;
-const SHIP_WIDTH: f32 = 44;
+const SHIP_WIDTH: f32 = 40;
 const SHIP_HEIGHT: f32 = 50;
 const SHIP_STEP: f32 = 1;
 const SHOT_WIDTH: f32 = 5;
@@ -63,13 +63,14 @@ const SHOT_HEIGHT: f32 = 5;
 const SHOT_SPEED: f32 = 10;
 const SUPER_SHOT_WIDTH: f32 = 100;
 const SUPER_SHOT_HEIGHT: f32 = 40;
-const SUPER_WAIT_TIME: i32 = 100; // enery chage time
+const SUPER_WAIT_TIME: i32 = 200; // enery chage time
 const SUPER_TIME: i32 = 200; // super mode time
 const LIMIT_TIME: i32 = 59; // second time
 const DEFAULT_COLOR: string = 'rgba(0,128, 0, 1.0)';
 const LIGHT_GREEN_COLOR: string = 'rgba(226,238,197,1.0)';
 const GREEN_DARK_LIGHT: string = 'rgba(17,31,17,1.0)';
 const LIGHT_YELLOR_GREEN: string = 'rgba(168,230,207,1.0)';
+const FPS = 60;
 
 enum Stage {
     openning,
@@ -137,7 +138,7 @@ class Shot implements Character {
 	}
 
 	draw(): void {
-		let _x: f32 = (this.x - SHOT_WIDTH / 2) as f32;
+		let _x: f32 = this.x as f32;
 		let _y: f32 = this.y as f32;
 		{
 			jsBeginPath();
@@ -164,11 +165,11 @@ class SuperShot extends Shot {
 		super(x, y, dx, dy, w, h , hp);
 	}
 	draw():void {
-		let _x: f32 = (this.x - SUPER_SHOT_WIDTH / 2) as f32;
+		let _x: f32 = this.x  as f32;
 		let _y: f32 = this.y as f32;
 		{
 			jsBeginPath();
-			jsSetFillStyle(DEFAULT_COLOR);
+			jsSetFillStyle(LIGHT_YELLOR_GREEN);
 			jsMoveTo(_x, _y - SUPER_SHOT_HEIGHT);
 			jsLineTo(_x + SUPER_SHOT_WIDTH, _y - SUPER_SHOT_HEIGHT);
 			jsLineTo(_x + SUPER_SHOT_WIDTH, _y);
@@ -402,6 +403,8 @@ class Game {
 		this.startminisecondtime = jsDatenow();
 		this.passedsecondtime = this.startminisecondtime;
 		this.passedminisecondtime = this.startminisecondtime;
+	    let _boss = new Boss(180, 60, 1, 0, BOSS_WIDTH, BOSS_HEIGHT, BOSS_MAX_HP);
+		this.bosses.push(_boss);
 	}
 
    	reset():void {
@@ -492,7 +495,7 @@ class Game {
 					let _shot = new Shot(_x, _y, 0, SHOT_SPEED, SHOT_WIDTH, SHOT_HEIGHT, 1);
 					if (this.super_time > 0) {
 						_shot = new SuperShot(
-							_x,
+							_x - SUPER_SHOT_WIDTH / 2,
 							_y,
 							0,
 							SHOT_SPEED,
@@ -635,7 +638,7 @@ class Game {
 				jsSetFillStyle(DEFAULT_COLOR);
 				jsSetFont('28px myfont');
 				jsFillText('Congratuations!', 260, 420);
-				jsFillText(this.getpassedtime() + ' seconds', 300, 480);
+				jsFillText(this.getpassedtime() + ' sec.', 340, 500);
 				break;
 			case Stage.playing:
 				// Draw boss
@@ -685,10 +688,12 @@ class Game {
 				break;
 			case Stage.openning:
                 // create boss
+                /*
                 if (this.bosses.length === 0) {
 		            let _boss = new Boss(180, 60, 1, 0, BOSS_WIDTH, BOSS_HEIGHT, BOSS_MAX_HP);
 		            this.bosses.push(_boss);
                 }
+                */
 				this.stage = Stage.playing;
 				break;
 			case Stage.playing:
@@ -705,7 +710,6 @@ class Game {
  * called for each animation frame.
  */
 
-const fps = 60;
 let last_frame = jsDatenow();
 const game = new Game();
 
@@ -716,7 +720,7 @@ export function animationFrameHandler(): void {
 
     while(delta >= 0){
         game.update();
-        delta -= 1000.0 /fps;
+        delta -= 1000.0 / FPS;
     }
 
     // draw

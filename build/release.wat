@@ -49,7 +49,7 @@
  (global $~lib/math/random_state0_64 (mut i64) (i64.const 0))
  (global $~lib/math/random_state1_64 (mut i64) (i64.const 0))
  (global $~argumentsLength (mut i32) (i32.const 0))
- (global $~lib/memory/__stack_pointer (mut i32) (i32.const 37332))
+ (global $~lib/memory/__stack_pointer (mut i32) (i32.const 37316))
  (memory $0 1)
  (data $0 (i32.const 1036) "<")
  (data $0.1 (i32.const 1048) "\02\00\00\00&\00\00\00r\00g\00b\00a\00(\000\00,\001\002\008\00,\00 \000\00,\00 \001\00.\000\00)")
@@ -110,19 +110,19 @@
  (data $31.1 (i32.const 4168) "\02")
  (data $32 (i32.const 4188) "\1c")
  (data $32.1 (i32.const 4200) "\02\00\00\00\02\00\00\00.")
- (data $33 (i32.const 4220) ",")
- (data $33.1 (i32.const 4232) "\02\00\00\00\10\00\00\00 \00s\00e\00c\00o\00n\00d\00s")
- (data $34 (i32.const 4268) "\1c")
- (data $34.1 (i32.const 4280) "\02\00\00\00\06\00\00\00 \00/\00 ")
- (data $35 (i32.const 4300) "\1c\00\00\00\03\00\00\00\00\00\00\00\13\00\00\00\0c\00\00\00\00\00\00\00\c0\10")
- (data $36 (i32.const 4332) ",")
- (data $36.1 (i32.const 4344) "\02\00\00\00\16\00\00\001\002\00p\00x\00 \00m\00y\00f\00o\00n\00t")
- (data $37 (i32.const 4380) ",")
- (data $37.1 (i32.const 4392) "\02\00\00\00\16\00\00\001\008\00p\00x\00 \00m\00y\00f\00o\00n\00t")
- (data $38 (i32.const 4428) ",")
- (data $38.1 (i32.const 4440) "\02\00\00\00\12\00\00\00B\00u\00l\00l\00e\00t\00s\00:\00 ")
- (data $39 (i32.const 4480) "\14\00\00\00 \00\00\00 \00\00\00 ")
- (data $39.1 (i32.const 4504) " \00\00\00 \00\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02\t\00\00 \00\00\00 \00\00\00\04A")
+ (data $33 (i32.const 4220) "\1c")
+ (data $33.1 (i32.const 4232) "\02\00\00\00\n\00\00\00 \00s\00e\00c\00.")
+ (data $34 (i32.const 4252) "\1c")
+ (data $34.1 (i32.const 4264) "\02\00\00\00\06\00\00\00 \00/\00 ")
+ (data $35 (i32.const 4284) "\1c\00\00\00\03\00\00\00\00\00\00\00\13\00\00\00\0c\00\00\00\00\00\00\00\b0\10")
+ (data $36 (i32.const 4316) ",")
+ (data $36.1 (i32.const 4328) "\02\00\00\00\16\00\00\001\002\00p\00x\00 \00m\00y\00f\00o\00n\00t")
+ (data $37 (i32.const 4364) ",")
+ (data $37.1 (i32.const 4376) "\02\00\00\00\16\00\00\001\008\00p\00x\00 \00m\00y\00f\00o\00n\00t")
+ (data $38 (i32.const 4412) ",")
+ (data $38.1 (i32.const 4424) "\02\00\00\00\12\00\00\00B\00u\00l\00l\00e\00t\00s\00:\00 ")
+ (data $39 (i32.const 4464) "\14\00\00\00 \00\00\00 \00\00\00 ")
+ (data $39.1 (i32.const 4488) " \00\00\00 \00\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02A\00\00 \00\00\00\02A\00\00\02\t\00\00 \00\00\00 \00\00\00\04A")
  (export "animationFrameHandler" (func $assembly/index/animationFrameHandler))
  (export "startAnimation" (func $assembly/index/startAnimation))
  (export "shot" (func $assembly/index/shot))
@@ -231,7 +231,7 @@
     i32.load offset=8
     i32.eqz
     local.get $0
-    i32.const 37332
+    i32.const 37316
     i32.lt_u
     i32.and
     i32.eqz
@@ -280,7 +280,7 @@
    i32.const 1
   else
    local.get $1
-   i32.const 4480
+   i32.const 4464
    i32.load
    i32.gt_u
    if
@@ -294,7 +294,7 @@
    local.get $1
    i32.const 2
    i32.shl
-   i32.const 4484
+   i32.const 4468
    i32.add
    i32.load
    i32.const 32
@@ -878,10 +878,10 @@
   if
    unreachable
   end
-  i32.const 37344
+  i32.const 37328
   i32.const 0
   i32.store
-  i32.const 38912
+  i32.const 38896
   i32.const 0
   i32.store
   loop $for-loop|0
@@ -892,7 +892,7 @@
     local.get $0
     i32.const 2
     i32.shl
-    i32.const 37344
+    i32.const 37328
     i32.add
     i32.const 0
     i32.store offset=4
@@ -910,7 +910,7 @@
       i32.add
       i32.const 2
       i32.shl
-      i32.const 37344
+      i32.const 37328
       i32.add
       i32.const 0
       i32.store offset=96
@@ -928,14 +928,14 @@
     br $for-loop|0
    end
   end
-  i32.const 37344
-  i32.const 38916
+  i32.const 37328
+  i32.const 38900
   memory.size
   i64.extend_i32_s
   i64.const 16
   i64.shl
   call $~lib/rt/tlsf/addMemory
-  i32.const 37344
+  i32.const 37328
   global.set $~lib/rt/tlsf/ROOT
  )
  (func $~lib/rt/itcms/step (result i32)
@@ -1020,7 +1020,7 @@
      local.set $0
      loop $while-continue|0
       local.get $0
-      i32.const 37332
+      i32.const 37316
       i32.lt_u
       if
        local.get $0
@@ -1116,7 +1116,7 @@
      unreachable
     end
     local.get $0
-    i32.const 37332
+    i32.const 37316
     i32.lt_u
     if
      local.get $0
@@ -1139,7 +1139,7 @@
      i32.const 4
      i32.add
      local.tee $0
-     i32.const 37332
+     i32.const 37316
      i32.ge_u
      if
       global.get $~lib/rt/tlsf/ROOT
@@ -1806,11 +1806,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -2105,11 +2105,11 @@
         i32.sub
         global.set $~lib/memory/__stack_pointer
         global.get $~lib/memory/__stack_pointer
-        i32.const 4564
+        i32.const 4548
         i32.lt_s
         if
-         i32.const 37360
-         i32.const 37408
+         i32.const 37344
+         i32.const 37392
          i32.const 1
          i32.const 1
          call $~lib/builtins/abort
@@ -2177,7 +2177,7 @@
   memory.size
   i32.const 16
   i32.shl
-  i32.const 37332
+  i32.const 37316
   i32.sub
   i32.const 1
   i32.shr_u
@@ -2215,11 +2215,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -2349,7 +2349,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2370,7 +2370,7 @@
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2467,8 +2467,8 @@
    local.get $0
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -2483,7 +2483,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2504,7 +2504,7 @@
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2601,8 +2601,8 @@
    local.get $0
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -2617,7 +2617,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2638,7 +2638,7 @@
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -2735,26 +2735,25 @@
    local.get $0
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
   unreachable
  )
- (func $assembly/index/Game#constructor (result i32)
+ (func $assembly/index/Boss#constructor (result i32)
   (local $0 i32)
-  (local $1 i32)
   global.get $~lib/memory/__stack_pointer
-  i32.const 12
+  i32.const 8
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -2764,8 +2763,319 @@
   i64.const 0
   i64.store
   global.get $~lib/memory/__stack_pointer
+  i32.const 32
+  i32.const 8
+  call $~lib/rt/itcms/__new
+  local.tee $0
+  i32.store
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=4
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=8
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=12
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=16
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=20
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
   i32.const 0
-  i32.store offset=8
+  i32.store offset=24
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=28
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 180
+  f32.store
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 60
+  f32.store offset=4
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 1
+  f32.store offset=8
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 0
+  f32.store offset=12
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 225
+  f32.store offset=16
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 225
+  f32.store offset=20
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  i32.const 999
+  i32.store offset=24
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=4
+  local.get $0
+  f32.const 1
+  f32.store offset=28
+  global.get $~lib/memory/__stack_pointer
+  i32.const 8
+  i32.add
+  global.set $~lib/memory/__stack_pointer
+  local.get $0
+ )
+ (func $~lib/array/Array<assembly/index/Boss>#push (param $0 i32) (param $1 i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  global.get $~lib/memory/__stack_pointer
+  i32.const 4
+  i32.sub
+  global.set $~lib/memory/__stack_pointer
+  block $folding-inner0
+   global.get $~lib/memory/__stack_pointer
+   i32.const 4548
+   i32.lt_s
+   br_if $folding-inner0
+   global.get $~lib/memory/__stack_pointer
+   i32.const 0
+   i32.store
+   global.get $~lib/memory/__stack_pointer
+   local.get $0
+   i32.store
+   local.get $0
+   i32.load offset=12
+   local.tee $6
+   i32.const 1
+   i32.add
+   local.tee $5
+   local.set $2
+   global.get $~lib/memory/__stack_pointer
+   i32.const 4
+   i32.sub
+   global.set $~lib/memory/__stack_pointer
+   global.get $~lib/memory/__stack_pointer
+   i32.const 4548
+   i32.lt_s
+   br_if $folding-inner0
+   global.get $~lib/memory/__stack_pointer
+   i32.const 0
+   i32.store
+   global.get $~lib/memory/__stack_pointer
+   local.get $0
+   i32.store
+   local.get $2
+   local.get $0
+   i32.load offset=8
+   local.tee $3
+   i32.const 2
+   i32.shr_u
+   i32.gt_u
+   if
+    local.get $2
+    i32.const 268435455
+    i32.gt_u
+    if
+     i32.const 1712
+     i32.const 1760
+     i32.const 19
+     i32.const 48
+     call $~lib/builtins/abort
+     unreachable
+    end
+    global.get $~lib/memory/__stack_pointer
+    local.get $0
+    i32.store
+    block $__inlined_func$~lib/rt/itcms/__renew$551
+     i32.const 1073741820
+     local.get $3
+     i32.const 1
+     i32.shl
+     local.tee $3
+     local.get $3
+     i32.const 1073741820
+     i32.ge_u
+     select
+     local.tee $3
+     i32.const 8
+     local.get $2
+     local.get $2
+     i32.const 8
+     i32.le_u
+     select
+     i32.const 2
+     i32.shl
+     local.tee $2
+     local.get $2
+     local.get $3
+     i32.lt_u
+     select
+     local.tee $4
+     local.get $0
+     i32.load
+     local.tee $3
+     i32.const 20
+     i32.sub
+     local.tee $7
+     i32.load
+     i32.const -4
+     i32.and
+     i32.const 16
+     i32.sub
+     i32.le_u
+     if
+      local.get $7
+      local.get $4
+      i32.store offset=16
+      local.get $3
+      local.set $2
+      br $__inlined_func$~lib/rt/itcms/__renew$551
+     end
+     local.get $4
+     local.get $7
+     i32.load offset=12
+     call $~lib/rt/itcms/__new
+     local.tee $2
+     local.get $3
+     local.get $4
+     local.get $7
+     i32.load offset=16
+     local.tee $7
+     local.get $4
+     local.get $7
+     i32.lt_u
+     select
+     memory.copy
+    end
+    local.get $2
+    local.get $3
+    i32.ne
+    if
+     local.get $0
+     local.get $2
+     i32.store
+     local.get $0
+     local.get $2
+     i32.store offset=4
+     local.get $0
+     local.get $2
+     i32.const 0
+     call $~lib/rt/itcms/__link
+    end
+    local.get $0
+    local.get $4
+    i32.store offset=8
+   end
+   global.get $~lib/memory/__stack_pointer
+   i32.const 4
+   i32.add
+   global.set $~lib/memory/__stack_pointer
+   global.get $~lib/memory/__stack_pointer
+   local.get $0
+   i32.store
+   local.get $0
+   i32.load offset=4
+   local.get $6
+   i32.const 2
+   i32.shl
+   i32.add
+   local.get $1
+   i32.store
+   local.get $0
+   local.get $1
+   i32.const 1
+   call $~lib/rt/itcms/__link
+   global.get $~lib/memory/__stack_pointer
+   local.get $0
+   i32.store
+   local.get $0
+   local.get $5
+   i32.store offset=12
+   global.get $~lib/memory/__stack_pointer
+   i32.const 4
+   i32.add
+   global.set $~lib/memory/__stack_pointer
+   return
+  end
+  i32.const 37344
+  i32.const 37392
+  i32.const 1
+  i32.const 1
+  call $~lib/builtins/abort
+  unreachable
+ )
+ (func $assembly/index/Game#constructor (result i32)
+  (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
+  global.get $~lib/memory/__stack_pointer
+  i32.const 20
+  i32.sub
+  global.set $~lib/memory/__stack_pointer
+  global.get $~lib/memory/__stack_pointer
+  i32.const 4548
+  i32.lt_s
+  if
+   i32.const 37344
+   i32.const 37392
+   i32.const 1
+   i32.const 1
+   call $~lib/builtins/abort
+   unreachable
+  end
+  global.get $~lib/memory/__stack_pointer
+  i32.const 0
+  i32.const 20
+  memory.fill
   global.get $~lib/memory/__stack_pointer
   i32.const 48
   i32.const 4
@@ -2888,14 +3198,14 @@
   local.get $0
   i32.store offset=4
   i32.const 0
-  f32.const 378
+  f32.const 380
   f32.const 940
   f32.const 1
   f32.const 0
-  f32.const 44
+  f32.const 40
   f32.const 50
   i32.const 1
-  f32.const 378
+  f32.const 380
   call $assembly/index/Ship#constructor
   local.set $1
   global.get $~lib/memory/__stack_pointer
@@ -2988,7 +3298,25 @@
   i32.load offset=36
   i32.store offset=44
   global.get $~lib/memory/__stack_pointer
-  i32.const 12
+  call $assembly/index/Boss#constructor
+  local.tee $2
+  i32.store offset=12
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.store offset=16
+  global.get $~lib/memory/__stack_pointer
+  local.get $0
+  i32.load offset=20
+  local.tee $1
+  i32.store offset=4
+  global.get $~lib/memory/__stack_pointer
+  local.get $2
+  i32.store offset=8
+  local.get $1
+  local.get $2
+  call $~lib/array/Array<assembly/index/Boss>#push
+  global.get $~lib/memory/__stack_pointer
+  i32.const 20
   i32.add
   global.set $~lib/memory/__stack_pointer
   local.get $0
@@ -2999,11 +3327,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3030,11 +3358,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3087,200 +3415,17 @@
   global.set $~lib/memory/__stack_pointer
   local.get $0
  )
- (func $~lib/array/Array<assembly/index/Bullet>#push (param $0 i32) (param $1 i32)
-  (local $2 i32)
-  (local $3 i32)
-  (local $4 i32)
-  (local $5 i32)
-  (local $6 i32)
-  (local $7 i32)
-  global.get $~lib/memory/__stack_pointer
-  i32.const 4
-  i32.sub
-  global.set $~lib/memory/__stack_pointer
-  block $folding-inner0
-   global.get $~lib/memory/__stack_pointer
-   i32.const 4564
-   i32.lt_s
-   br_if $folding-inner0
-   global.get $~lib/memory/__stack_pointer
-   i32.const 0
-   i32.store
-   global.get $~lib/memory/__stack_pointer
-   local.get $0
-   i32.store
-   local.get $0
-   i32.load offset=12
-   local.tee $6
-   i32.const 1
-   i32.add
-   local.tee $5
-   local.set $2
-   global.get $~lib/memory/__stack_pointer
-   i32.const 4
-   i32.sub
-   global.set $~lib/memory/__stack_pointer
-   global.get $~lib/memory/__stack_pointer
-   i32.const 4564
-   i32.lt_s
-   br_if $folding-inner0
-   global.get $~lib/memory/__stack_pointer
-   i32.const 0
-   i32.store
-   global.get $~lib/memory/__stack_pointer
-   local.get $0
-   i32.store
-   local.get $2
-   local.get $0
-   i32.load offset=8
-   local.tee $3
-   i32.const 2
-   i32.shr_u
-   i32.gt_u
-   if
-    local.get $2
-    i32.const 268435455
-    i32.gt_u
-    if
-     i32.const 1712
-     i32.const 1760
-     i32.const 19
-     i32.const 48
-     call $~lib/builtins/abort
-     unreachable
-    end
-    global.get $~lib/memory/__stack_pointer
-    local.get $0
-    i32.store
-    block $__inlined_func$~lib/rt/itcms/__renew$552
-     i32.const 1073741820
-     local.get $3
-     i32.const 1
-     i32.shl
-     local.tee $3
-     local.get $3
-     i32.const 1073741820
-     i32.ge_u
-     select
-     local.tee $3
-     i32.const 8
-     local.get $2
-     local.get $2
-     i32.const 8
-     i32.le_u
-     select
-     i32.const 2
-     i32.shl
-     local.tee $2
-     local.get $2
-     local.get $3
-     i32.lt_u
-     select
-     local.tee $4
-     local.get $0
-     i32.load
-     local.tee $3
-     i32.const 20
-     i32.sub
-     local.tee $7
-     i32.load
-     i32.const -4
-     i32.and
-     i32.const 16
-     i32.sub
-     i32.le_u
-     if
-      local.get $7
-      local.get $4
-      i32.store offset=16
-      local.get $3
-      local.set $2
-      br $__inlined_func$~lib/rt/itcms/__renew$552
-     end
-     local.get $4
-     local.get $7
-     i32.load offset=12
-     call $~lib/rt/itcms/__new
-     local.tee $2
-     local.get $3
-     local.get $4
-     local.get $7
-     i32.load offset=16
-     local.tee $7
-     local.get $4
-     local.get $7
-     i32.lt_u
-     select
-     memory.copy
-    end
-    local.get $2
-    local.get $3
-    i32.ne
-    if
-     local.get $0
-     local.get $2
-     i32.store
-     local.get $0
-     local.get $2
-     i32.store offset=4
-     local.get $0
-     local.get $2
-     i32.const 0
-     call $~lib/rt/itcms/__link
-    end
-    local.get $0
-    local.get $4
-    i32.store offset=8
-   end
-   global.get $~lib/memory/__stack_pointer
-   i32.const 4
-   i32.add
-   global.set $~lib/memory/__stack_pointer
-   global.get $~lib/memory/__stack_pointer
-   local.get $0
-   i32.store
-   local.get $0
-   i32.load offset=4
-   local.get $6
-   i32.const 2
-   i32.shl
-   i32.add
-   local.get $1
-   i32.store
-   local.get $0
-   local.get $1
-   i32.const 1
-   call $~lib/rt/itcms/__link
-   global.get $~lib/memory/__stack_pointer
-   local.get $0
-   i32.store
-   local.get $0
-   local.get $5
-   i32.store offset=12
-   global.get $~lib/memory/__stack_pointer
-   i32.const 4
-   i32.add
-   global.set $~lib/memory/__stack_pointer
-   return
-  end
-  i32.const 37360
-  i32.const 37408
-  i32.const 1
-  i32.const 1
-  call $~lib/builtins/abort
-  unreachable
- )
  (func $assembly/index/Shot#constructor (param $0 i32) (param $1 f32) (param $2 f32) (param $3 f32) (param $4 f32) (param $5 i32) (result i32)
   global.get $~lib/memory/__stack_pointer
   i32.const 8
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3398,11 +3543,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3414,7 +3559,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $0
   i32.store
-  block $__inlined_func$assembly/index/Character#get:x@override$553
+  block $__inlined_func$assembly/index/Character#get:x@override$552
    block $default
     local.get $0
     i32.const 8
@@ -3422,7 +3567,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:x@override$553 $default $default $__inlined_func$assembly/index/Character#get:x@override$553 $default $default $__inlined_func$assembly/index/Character#get:x@override$553 $default $default $__inlined_func$assembly/index/Character#get:x@override$553 $default $default $__inlined_func$assembly/index/Character#get:x@override$553 $__inlined_func$assembly/index/Character#get:x@override$553 $default
+    br_table $__inlined_func$assembly/index/Character#get:x@override$552 $default $default $__inlined_func$assembly/index/Character#get:x@override$552 $default $default $__inlined_func$assembly/index/Character#get:x@override$552 $default $default $__inlined_func$assembly/index/Character#get:x@override$552 $default $default $__inlined_func$assembly/index/Character#get:x@override$552 $__inlined_func$assembly/index/Character#get:x@override$552 $default
    end
    unreachable
   end
@@ -3432,7 +3577,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $1
   i32.store
-  block $__inlined_func$assembly/index/Character#get:x@override$554
+  block $__inlined_func$assembly/index/Character#get:x@override$553
    block $default0
     local.get $1
     i32.const 8
@@ -3440,7 +3585,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:x@override$554 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$554 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$554 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$554 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$554 $__inlined_func$assembly/index/Character#get:x@override$554 $default0
+    br_table $__inlined_func$assembly/index/Character#get:x@override$553 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$553 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$553 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$553 $default0 $default0 $__inlined_func$assembly/index/Character#get:x@override$553 $__inlined_func$assembly/index/Character#get:x@override$553 $default0
    end
    unreachable
   end
@@ -3452,7 +3597,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $0
   i32.store
-  block $__inlined_func$assembly/index/Character#get:x@override$555
+  block $__inlined_func$assembly/index/Character#get:x@override$554
    block $default1
     local.get $0
     i32.const 8
@@ -3460,7 +3605,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:x@override$555 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$555 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$555 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$555 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$555 $__inlined_func$assembly/index/Character#get:x@override$555 $default1
+    br_table $__inlined_func$assembly/index/Character#get:x@override$554 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$554 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$554 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$554 $default1 $default1 $__inlined_func$assembly/index/Character#get:x@override$554 $__inlined_func$assembly/index/Character#get:x@override$554 $default1
    end
    unreachable
   end
@@ -3470,7 +3615,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $0
   i32.store
-  block $__inlined_func$assembly/index/Character#get:w@override$556
+  block $__inlined_func$assembly/index/Character#get:w@override$555
    block $default2
     local.get $0
     i32.const 8
@@ -3478,7 +3623,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:w@override$556 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$556 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$556 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$556 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$556 $__inlined_func$assembly/index/Character#get:w@override$556 $default2
+    br_table $__inlined_func$assembly/index/Character#get:w@override$555 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$555 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$555 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$555 $default2 $default2 $__inlined_func$assembly/index/Character#get:w@override$555 $__inlined_func$assembly/index/Character#get:w@override$555 $default2
    end
    unreachable
   end
@@ -3490,7 +3635,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $1
   i32.store
-  block $__inlined_func$assembly/index/Character#get:x@override$557
+  block $__inlined_func$assembly/index/Character#get:x@override$556
    block $default3
     local.get $1
     i32.const 8
@@ -3498,7 +3643,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:x@override$557 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$557 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$557 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$557 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$557 $__inlined_func$assembly/index/Character#get:x@override$557 $default3
+    br_table $__inlined_func$assembly/index/Character#get:x@override$556 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$556 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$556 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$556 $default3 $default3 $__inlined_func$assembly/index/Character#get:x@override$556 $__inlined_func$assembly/index/Character#get:x@override$556 $default3
    end
    unreachable
   end
@@ -3508,7 +3653,7 @@
   global.get $~lib/memory/__stack_pointer
   local.get $1
   i32.store
-  block $__inlined_func$assembly/index/Character#get:w@override$558
+  block $__inlined_func$assembly/index/Character#get:w@override$557
    block $default4
     local.get $1
     i32.const 8
@@ -3516,7 +3661,7 @@
     i32.load
     i32.const 5
     i32.sub
-    br_table $__inlined_func$assembly/index/Character#get:w@override$558 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$558 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$558 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$558 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$558 $__inlined_func$assembly/index/Character#get:w@override$558 $default4
+    br_table $__inlined_func$assembly/index/Character#get:w@override$557 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$557 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$557 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$557 $default4 $default4 $__inlined_func$assembly/index/Character#get:w@override$557 $__inlined_func$assembly/index/Character#get:w@override$557 $default4
    end
    unreachable
   end
@@ -3532,7 +3677,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $0
    i32.store
-   block $__inlined_func$assembly/index/Character#get:y@override$559
+   block $__inlined_func$assembly/index/Character#get:y@override$558
     block $default5
      local.get $0
      i32.const 8
@@ -3540,7 +3685,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:y@override$559 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$559 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$559 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$559 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$559 $__inlined_func$assembly/index/Character#get:y@override$559 $default5
+     br_table $__inlined_func$assembly/index/Character#get:y@override$558 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$558 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$558 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$558 $default5 $default5 $__inlined_func$assembly/index/Character#get:y@override$558 $__inlined_func$assembly/index/Character#get:y@override$558 $default5
     end
     unreachable
    end
@@ -3550,7 +3695,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $1
    i32.store
-   block $__inlined_func$assembly/index/Character#get:y@override$560
+   block $__inlined_func$assembly/index/Character#get:y@override$559
     block $default6
      local.get $1
      i32.const 8
@@ -3558,7 +3703,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:y@override$560 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$560 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$560 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$560 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$560 $__inlined_func$assembly/index/Character#get:y@override$560 $default6
+     br_table $__inlined_func$assembly/index/Character#get:y@override$559 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$559 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$559 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$559 $default6 $default6 $__inlined_func$assembly/index/Character#get:y@override$559 $__inlined_func$assembly/index/Character#get:y@override$559 $default6
     end
     unreachable
    end
@@ -3570,7 +3715,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $0
    i32.store
-   block $__inlined_func$assembly/index/Character#get:y@override$561
+   block $__inlined_func$assembly/index/Character#get:y@override$560
     block $default7
      local.get $0
      i32.const 8
@@ -3578,7 +3723,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:y@override$561 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$561 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$561 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$561 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$561 $__inlined_func$assembly/index/Character#get:y@override$561 $default7
+     br_table $__inlined_func$assembly/index/Character#get:y@override$560 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$560 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$560 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$560 $default7 $default7 $__inlined_func$assembly/index/Character#get:y@override$560 $__inlined_func$assembly/index/Character#get:y@override$560 $default7
     end
     unreachable
    end
@@ -3588,7 +3733,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $0
    i32.store
-   block $__inlined_func$assembly/index/Character#get:h@override$562
+   block $__inlined_func$assembly/index/Character#get:h@override$561
     block $default8
      local.get $0
      i32.const 8
@@ -3596,7 +3741,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:h@override$562 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$562 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$562 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$562 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$562 $__inlined_func$assembly/index/Character#get:h@override$562 $default8
+     br_table $__inlined_func$assembly/index/Character#get:h@override$561 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$561 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$561 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$561 $default8 $default8 $__inlined_func$assembly/index/Character#get:h@override$561 $__inlined_func$assembly/index/Character#get:h@override$561 $default8
     end
     unreachable
    end
@@ -3608,7 +3753,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $1
    i32.store
-   block $__inlined_func$assembly/index/Character#get:y@override$563
+   block $__inlined_func$assembly/index/Character#get:y@override$562
     block $default9
      local.get $1
      i32.const 8
@@ -3616,7 +3761,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:y@override$563 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$563 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$563 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$563 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$563 $__inlined_func$assembly/index/Character#get:y@override$563 $default9
+     br_table $__inlined_func$assembly/index/Character#get:y@override$562 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$562 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$562 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$562 $default9 $default9 $__inlined_func$assembly/index/Character#get:y@override$562 $__inlined_func$assembly/index/Character#get:y@override$562 $default9
     end
     unreachable
    end
@@ -3626,7 +3771,7 @@
    global.get $~lib/memory/__stack_pointer
    local.get $1
    i32.store
-   block $__inlined_func$assembly/index/Character#get:h@override$564
+   block $__inlined_func$assembly/index/Character#get:h@override$563
     block $default10
      local.get $1
      i32.const 8
@@ -3634,7 +3779,7 @@
      i32.load
      i32.const 5
      i32.sub
-     br_table $__inlined_func$assembly/index/Character#get:h@override$564 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$564 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$564 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$564 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$564 $__inlined_func$assembly/index/Character#get:h@override$564 $default10
+     br_table $__inlined_func$assembly/index/Character#get:h@override$563 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$563 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$563 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$563 $default10 $default10 $__inlined_func$assembly/index/Character#get:h@override$563 $__inlined_func$assembly/index/Character#get:h@override$563 $default10
     end
     unreachable
    end
@@ -3669,11 +3814,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -3738,7 +3883,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner1
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner1
    global.get $~lib/memory/__stack_pointer
@@ -3869,7 +4014,7 @@
      i32.sub
      global.set $~lib/memory/__stack_pointer
      global.get $~lib/memory/__stack_pointer
-     i32.const 4564
+     i32.const 4548
      i32.lt_s
      br_if $folding-inner1
      global.get $~lib/memory/__stack_pointer
@@ -3984,7 +4129,7 @@
      i32.store offset=4
      local.get $7
      local.get $1
-     call $~lib/array/Array<assembly/index/Bullet>#push
+     call $~lib/array/Array<assembly/index/Boss>#push
     end
     loop $for-loop|1
      global.get $~lib/memory/__stack_pointer
@@ -4020,7 +4165,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner1
       global.get $~lib/memory/__stack_pointer
@@ -4066,7 +4211,7 @@
       i32.const 8
       i32.add
       global.set $~lib/memory/__stack_pointer
-      block $__inlined_func$assembly/index/Bullet#exit$566 (result i32)
+      block $__inlined_func$assembly/index/Bullet#exit$565 (result i32)
        global.get $~lib/memory/__stack_pointer
        local.get $0
        i32.store offset=8
@@ -4087,7 +4232,7 @@
        i32.sub
        global.set $~lib/memory/__stack_pointer
        global.get $~lib/memory/__stack_pointer
-       i32.const 4564
+       i32.const 4548
        i32.lt_s
        br_if $folding-inner1
        global.get $~lib/memory/__stack_pointer
@@ -4108,7 +4253,7 @@
         i32.add
         global.set $~lib/memory/__stack_pointer
         i32.const 1
-        br $__inlined_func$assembly/index/Bullet#exit$566
+        br $__inlined_func$assembly/index/Bullet#exit$565
        end
        global.get $~lib/memory/__stack_pointer
        local.get $1
@@ -4123,7 +4268,7 @@
         i32.add
         global.set $~lib/memory/__stack_pointer
         i32.const 1
-        br $__inlined_func$assembly/index/Bullet#exit$566
+        br $__inlined_func$assembly/index/Bullet#exit$565
        end
        global.get $~lib/memory/__stack_pointer
        local.get $1
@@ -4138,7 +4283,7 @@
         i32.add
         global.set $~lib/memory/__stack_pointer
         i32.const 1
-        br $__inlined_func$assembly/index/Bullet#exit$566
+        br $__inlined_func$assembly/index/Bullet#exit$565
        end
        global.get $~lib/memory/__stack_pointer
        local.get $1
@@ -4153,7 +4298,7 @@
         i32.add
         global.set $~lib/memory/__stack_pointer
         i32.const 1
-        br $__inlined_func$assembly/index/Bullet#exit$566
+        br $__inlined_func$assembly/index/Bullet#exit$565
        end
        global.get $~lib/memory/__stack_pointer
        i32.const 4
@@ -4198,7 +4343,7 @@
        i32.sub
        global.set $~lib/memory/__stack_pointer
        global.get $~lib/memory/__stack_pointer
-       i32.const 4564
+       i32.const 4548
        i32.lt_s
        br_if $folding-inner1
        global.get $~lib/memory/__stack_pointer
@@ -4329,7 +4474,7 @@
      i32.store
      local.get $1
      f32.load
-     f32.const 22
+     f32.const 20
      f32.add
      local.set $3
      global.get $~lib/memory/__stack_pointer
@@ -4367,7 +4512,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner1
       global.get $~lib/memory/__stack_pointer
@@ -4385,6 +4530,8 @@
       global.get $~lib/memory/__stack_pointer
       local.get $2
       local.get $3
+      f32.const -50
+      f32.add
       local.get $4
       f32.const 100
       f32.const 40
@@ -4425,7 +4572,7 @@
      i32.store offset=4
      local.get $1
      local.get $2
-     call $~lib/array/Array<assembly/index/Bullet>#push
+     call $~lib/array/Array<assembly/index/Boss>#push
     end
     i32.const 0
     local.set $2
@@ -4463,7 +4610,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner1
       global.get $~lib/memory/__stack_pointer
@@ -4491,7 +4638,7 @@
       i32.const 8
       i32.add
       global.set $~lib/memory/__stack_pointer
-      block $__inlined_func$assembly/index/Shot#exit$570 (result i32)
+      block $__inlined_func$assembly/index/Shot#exit$569 (result i32)
        global.get $~lib/memory/__stack_pointer
        local.get $0
        i32.store offset=8
@@ -4512,7 +4659,7 @@
        i32.sub
        global.set $~lib/memory/__stack_pointer
        global.get $~lib/memory/__stack_pointer
-       i32.const 4564
+       i32.const 4548
        i32.lt_s
        br_if $folding-inner1
        global.get $~lib/memory/__stack_pointer
@@ -4531,7 +4678,7 @@
         i32.add
         global.set $~lib/memory/__stack_pointer
         i32.const 1
-        br $__inlined_func$assembly/index/Shot#exit$570
+        br $__inlined_func$assembly/index/Shot#exit$569
        end
        global.get $~lib/memory/__stack_pointer
        i32.const 4
@@ -4576,7 +4723,7 @@
        i32.sub
        global.set $~lib/memory/__stack_pointer
        global.get $~lib/memory/__stack_pointer
-       i32.const 4564
+       i32.const 4548
        i32.lt_s
        br_if $folding-inner1
        global.get $~lib/memory/__stack_pointer
@@ -4933,7 +5080,7 @@
        local.get $1
        i32.gt_s
        if
-        block $__inlined_func$assembly/index/Boss#hit$572 (result i32)
+        block $__inlined_func$assembly/index/Boss#hit$571 (result i32)
          global.get $~lib/memory/__stack_pointer
          local.get $0
          i32.store offset=20
@@ -4969,7 +5116,7 @@
          i32.sub
          global.set $~lib/memory/__stack_pointer
          global.get $~lib/memory/__stack_pointer
-         i32.const 4564
+         i32.const 4548
          i32.lt_s
          br_if $folding-inner1
          global.get $~lib/memory/__stack_pointer
@@ -4990,7 +5137,7 @@
           i32.add
           global.set $~lib/memory/__stack_pointer
           i32.const 1
-          br $__inlined_func$assembly/index/Boss#hit$572
+          br $__inlined_func$assembly/index/Boss#hit$571
          end
          global.get $~lib/memory/__stack_pointer
          i32.const 8
@@ -5099,7 +5246,7 @@
     i32.sub
     global.set $~lib/memory/__stack_pointer
     global.get $~lib/memory/__stack_pointer
-    i32.const 4564
+    i32.const 4548
     i32.lt_s
     br_if $folding-inner1
     global.get $~lib/memory/__stack_pointer
@@ -5150,7 +5297,7 @@
      local.get $3
      local.get $1
      f32.load
-     f32.const 44
+     f32.const 40
      f32.add
      f32.gt
      if
@@ -5198,7 +5345,7 @@
     i32.sub
     global.set $~lib/memory/__stack_pointer
     global.get $~lib/memory/__stack_pointer
-    i32.const 4564
+    i32.const 4548
     i32.lt_s
     br_if $folding-inner1
     global.get $~lib/memory/__stack_pointer
@@ -5319,7 +5466,7 @@
      i32.sub
      global.set $~lib/memory/__stack_pointer
      global.get $~lib/memory/__stack_pointer
-     i32.const 4564
+     i32.const 4548
      i32.lt_s
      br_if $folding-inner1
      global.get $~lib/memory/__stack_pointer
@@ -5466,7 +5613,7 @@
     i32.store
     local.get $0
     i32.load offset=8
-    i32.const 100
+    i32.const 200
     i32.gt_s
     if
      global.get $~lib/memory/__stack_pointer
@@ -5592,7 +5739,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner1
       global.get $~lib/memory/__stack_pointer
@@ -5775,8 +5922,8 @@
    global.set $~lib/memory/__stack_pointer
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -5797,11 +5944,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -6156,11 +6303,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -6326,7 +6473,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -6343,7 +6490,7 @@
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -6412,8 +6559,8 @@
    local.get $0
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -6428,7 +6575,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -6456,7 +6603,7 @@
     i32.sub
     global.set $~lib/memory/__stack_pointer
     global.get $~lib/memory/__stack_pointer
-    i32.const 4564
+    i32.const 4548
     i32.lt_s
     br_if $folding-inner0
     global.get $~lib/memory/__stack_pointer
@@ -6542,8 +6689,8 @@
    local.get $0
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -6557,11 +6704,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -6676,11 +6823,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -6710,7 +6857,7 @@
   i32.eqz
   if
    global.get $~lib/memory/__stack_pointer
-   i32.const 4320
+   i32.const 4304
    i32.load
    local.tee $0
    i32.store
@@ -6733,7 +6880,7 @@
     local.get $2
     i32.const 2
     i32.shl
-    i32.const 4320
+    i32.const 4304
     i32.add
     i32.load
     local.tee $4
@@ -6792,7 +6939,7 @@
     local.get $1
     i32.const 2
     i32.shl
-    i32.const 4320
+    i32.const 4304
     i32.add
     i32.load
     local.tee $5
@@ -6851,7 +6998,7 @@
   local.get $3
   i32.const 2
   i32.shl
-  i32.const 4320
+  i32.const 4304
   i32.add
   i32.load
   local.tee $0
@@ -6900,7 +7047,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner2
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner2
    global.get $~lib/memory/__stack_pointer
@@ -6973,7 +7120,7 @@
        f32.const 300
        f32.const 490
        call $assembly/index/jsFillText
-       f32.const 378
+       f32.const 380
        f32.const 940
        call $assembly/index/draw_ship
        br $break|0
@@ -7058,8 +7205,8 @@
      local.get $0
      i32.store
      local.get $0
-     f32.const 300
-     f32.const 480
+     f32.const 340
+     f32.const 500
      call $assembly/index/jsFillText
      br $break|0
     end
@@ -7083,7 +7230,7 @@
     i32.sub
     global.set $~lib/memory/__stack_pointer
     global.get $~lib/memory/__stack_pointer
-    i32.const 4564
+    i32.const 4548
     i32.lt_s
     br_if $folding-inner2
     global.get $~lib/memory/__stack_pointer
@@ -7107,33 +7254,33 @@
     local.tee $8
     i32.store offset=8
     global.get $~lib/memory/__stack_pointer
-    i32.const 4320
+    i32.const 4304
     i32.store
     global.get $~lib/memory/__stack_pointer
     local.get $7
     i32.store offset=12
-    i32.const 4320
+    i32.const 4304
     local.get $7
     i32.store
-    i32.const 4320
+    i32.const 4304
     local.get $7
     i32.const 1
     call $~lib/rt/itcms/__link
     global.get $~lib/memory/__stack_pointer
-    i32.const 4320
+    i32.const 4304
     i32.store
     global.get $~lib/memory/__stack_pointer
     local.get $8
     i32.store offset=12
-    i32.const 4328
+    i32.const 4312
     local.get $8
     i32.store
-    i32.const 4320
+    i32.const 4304
     local.get $8
     i32.const 1
     call $~lib/rt/itcms/__link
     global.get $~lib/memory/__stack_pointer
-    i32.const 4320
+    i32.const 4304
     i32.store
     global.get $~lib/memory/__stack_pointer
     i32.const 4176
@@ -7143,16 +7290,16 @@
     i32.sub
     global.set $~lib/memory/__stack_pointer
     global.get $~lib/memory/__stack_pointer
-    i32.const 4564
+    i32.const 4548
     i32.lt_s
     br_if $folding-inner2
     global.get $~lib/memory/__stack_pointer
     i64.const 0
     i64.store
     global.get $~lib/memory/__stack_pointer
-    i32.const 4320
+    i32.const 4304
     i32.store offset=4
-    i32.const 4316
+    i32.const 4300
     i32.load
     i32.const 2
     i32.shr_u
@@ -7171,9 +7318,9 @@
     local.get $7
     i32.store offset=16
     global.get $~lib/memory/__stack_pointer
-    i32.const 4352
+    i32.const 4336
     i32.store
-    i32.const 4352
+    i32.const 4336
     call $assembly/index/jsSetFont
     global.get $~lib/memory/__stack_pointer
     i32.const 1120
@@ -7252,7 +7399,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner2
       global.get $~lib/memory/__stack_pointer
@@ -7357,7 +7504,7 @@
         i32.sub
         global.set $~lib/memory/__stack_pointer
         global.get $~lib/memory/__stack_pointer
-        i32.const 4564
+        i32.const 4548
         i32.lt_s
         br_if $folding-inner2
         global.get $~lib/memory/__stack_pointer
@@ -7368,8 +7515,6 @@
         i32.store
         local.get $5
         f32.load
-        f32.const -50
-        f32.add
         local.set $1
         global.get $~lib/memory/__stack_pointer
         local.get $5
@@ -7379,9 +7524,9 @@
         local.set $2
         call $assembly/index/jsBeginPath
         global.get $~lib/memory/__stack_pointer
-        i32.const 1056
+        i32.const 1248
         i32.store
-        i32.const 1056
+        i32.const 1248
         call $assembly/index/jsSetFillStyle
         local.get $1
         local.get $2
@@ -7402,7 +7547,7 @@
        i32.sub
        global.set $~lib/memory/__stack_pointer
        global.get $~lib/memory/__stack_pointer
-       i32.const 4564
+       i32.const 4548
        i32.lt_s
        br_if $folding-inner2
        global.get $~lib/memory/__stack_pointer
@@ -7413,8 +7558,6 @@
        i32.store
        local.get $5
        f32.load
-       f32.const -2.5
-       f32.add
        local.set $1
        global.get $~lib/memory/__stack_pointer
        local.get $5
@@ -7481,7 +7624,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner2
       global.get $~lib/memory/__stack_pointer
@@ -7504,7 +7647,7 @@
       i32.sub
       global.set $~lib/memory/__stack_pointer
       global.get $~lib/memory/__stack_pointer
-      i32.const 4564
+      i32.const 4548
       i32.lt_s
       br_if $folding-inner2
       global.get $~lib/memory/__stack_pointer
@@ -7663,7 +7806,7 @@
      i32.sub
      global.set $~lib/memory/__stack_pointer
      global.get $~lib/memory/__stack_pointer
-     i32.const 4564
+     i32.const 4548
      i32.lt_s
      br_if $folding-inner2
      global.get $~lib/memory/__stack_pointer
@@ -7713,9 +7856,9 @@
     f32.const 50
     call $assembly/index/jsFillText
     global.get $~lib/memory/__stack_pointer
-    i32.const 4400
+    i32.const 4384
     i32.store
-    i32.const 4400
+    i32.const 4384
     call $assembly/index/jsSetFont
     global.get $~lib/memory/__stack_pointer
     i32.const 1120
@@ -7737,12 +7880,12 @@
     local.tee $0
     i32.store offset=20
     global.get $~lib/memory/__stack_pointer
-    i32.const 4448
+    i32.const 4432
     i32.store offset=4
     global.get $~lib/memory/__stack_pointer
     local.get $0
     i32.store offset=8
-    i32.const 4448
+    i32.const 4432
     local.get $0
     call $~lib/string/String.__concat
     local.set $0
@@ -7760,8 +7903,8 @@
    global.set $~lib/memory/__stack_pointer
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -7776,11 +7919,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -7834,134 +7977,6 @@
   i32.add
   global.set $~lib/memory/__stack_pointer
  )
- (func $assembly/index/Boss#constructor (result i32)
-  (local $0 i32)
-  global.get $~lib/memory/__stack_pointer
-  i32.const 8
-  i32.sub
-  global.set $~lib/memory/__stack_pointer
-  global.get $~lib/memory/__stack_pointer
-  i32.const 4564
-  i32.lt_s
-  if
-   i32.const 37360
-   i32.const 37408
-   i32.const 1
-   i32.const 1
-   call $~lib/builtins/abort
-   unreachable
-  end
-  global.get $~lib/memory/__stack_pointer
-  i64.const 0
-  i64.store
-  global.get $~lib/memory/__stack_pointer
-  i32.const 32
-  i32.const 8
-  call $~lib/rt/itcms/__new
-  local.tee $0
-  i32.store
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=4
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=8
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=12
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=16
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=20
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  i32.const 0
-  i32.store offset=24
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=28
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 180
-  f32.store
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 60
-  f32.store offset=4
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 1
-  f32.store offset=8
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 0
-  f32.store offset=12
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 225
-  f32.store offset=16
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 225
-  f32.store offset=20
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  i32.const 999
-  i32.store offset=24
-  global.get $~lib/memory/__stack_pointer
-  local.get $0
-  i32.store offset=4
-  local.get $0
-  f32.const 1
-  f32.store offset=28
-  global.get $~lib/memory/__stack_pointer
-  i32.const 8
-  i32.add
-  global.set $~lib/memory/__stack_pointer
-  local.get $0
- )
  (func $assembly/index/Game#reset (param $0 i32)
   (local $1 i32)
   (local $2 i32)
@@ -7970,11 +7985,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -8002,14 +8017,14 @@
   local.get $0
   i32.store
   i32.const 0
-  f32.const 378
+  f32.const 380
   f32.const 940
   f32.const 1
   f32.const 0
-  f32.const 44
+  f32.const 40
   f32.const 50
   i32.const 1
-  f32.const 378
+  f32.const 380
   call $assembly/index/Ship#constructor
   local.set $1
   global.get $~lib/memory/__stack_pointer
@@ -8054,7 +8069,7 @@
   i32.store offset=4
   local.get $2
   local.get $1
-  call $~lib/array/Array<assembly/index/Bullet>#push
+  call $~lib/array/Array<assembly/index/Boss>#push
   global.get $~lib/memory/__stack_pointer
   local.get $0
   i32.store
@@ -8144,15 +8159,13 @@
  )
  (func $assembly/index/shot
   (local $0 i32)
-  (local $1 i32)
-  (local $2 i32)
   global.get $~lib/memory/__stack_pointer
   i32.const 4
   i32.sub
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -8163,19 +8176,16 @@
    local.tee $0
    i32.store
    global.get $~lib/memory/__stack_pointer
-   i32.const 16
+   i32.const 8
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
    i64.const 0
    i64.store
-   global.get $~lib/memory/__stack_pointer
-   i64.const 0
-   i64.store offset=8
    global.get $~lib/memory/__stack_pointer
    local.get $0
    i32.store
@@ -8210,37 +8220,6 @@
      end
      global.get $~lib/memory/__stack_pointer
      local.get $0
-     i32.store offset=4
-     global.get $~lib/memory/__stack_pointer
-     local.get $0
-     i32.load offset=20
-     local.tee $1
-     i32.store
-     local.get $1
-     call $~lib/array/Array<assembly/index/Bullet>#get:length
-     i32.eqz
-     if
-      global.get $~lib/memory/__stack_pointer
-      call $assembly/index/Boss#constructor
-      local.tee $1
-      i32.store offset=8
-      global.get $~lib/memory/__stack_pointer
-      local.get $0
-      i32.store offset=12
-      global.get $~lib/memory/__stack_pointer
-      local.get $0
-      i32.load offset=20
-      local.tee $2
-      i32.store
-      global.get $~lib/memory/__stack_pointer
-      local.get $1
-      i32.store offset=4
-      local.get $2
-      local.get $1
-      call $~lib/array/Array<assembly/index/Bullet>#push
-     end
-     global.get $~lib/memory/__stack_pointer
-     local.get $0
      i32.store
      local.get $0
      i32.const 1
@@ -8266,7 +8245,7 @@
     i32.store8 offset=4
    end
    global.get $~lib/memory/__stack_pointer
-   i32.const 16
+   i32.const 8
    i32.add
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
@@ -8275,8 +8254,8 @@
    global.set $~lib/memory/__stack_pointer
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -8290,7 +8269,7 @@
   global.set $~lib/memory/__stack_pointer
   block $folding-inner0
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -8310,7 +8289,7 @@
    i32.sub
    global.set $~lib/memory/__stack_pointer
    global.get $~lib/memory/__stack_pointer
-   i32.const 4564
+   i32.const 4548
    i32.lt_s
    br_if $folding-inner0
    global.get $~lib/memory/__stack_pointer
@@ -8332,8 +8311,8 @@
    global.set $~lib/memory/__stack_pointer
    return
   end
-  i32.const 37360
-  i32.const 37408
+  i32.const 37344
+  i32.const 37392
   i32.const 1
   i32.const 1
   call $~lib/builtins/abort
@@ -8348,11 +8327,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
@@ -8415,11 +8394,11 @@
   i32.sub
   global.set $~lib/memory/__stack_pointer
   global.get $~lib/memory/__stack_pointer
-  i32.const 4564
+  i32.const 4548
   i32.lt_s
   if
-   i32.const 37360
-   i32.const 37408
+   i32.const 37344
+   i32.const 37392
    i32.const 1
    i32.const 1
    call $~lib/builtins/abort
