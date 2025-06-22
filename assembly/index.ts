@@ -65,12 +65,11 @@ const SUPER_SHOT_WIDTH: f32 = 100;
 const SUPER_SHOT_HEIGHT: f32 = 40;
 const SUPER_WAIT_TIME: i32 = 200; // enery chage time
 const SUPER_TIME: i32 = 200; // super mode time
-const LIMIT_TIME: i32 = 59; // second time
 const DEFAULT_COLOR: string = 'rgba(0,128, 0, 1.0)';
 const LIGHT_GREEN_COLOR: string = 'rgba(226,238,197,1.0)';
 const GREEN_DARK_LIGHT: string = 'rgba(17,31,17,1.0)';
 const LIGHT_YELLOR_GREEN: string = 'rgba(168,230,207,1.0)';
-const FPS = 60;
+const SKIP_DRAW_FRAME = 16;
 
 enum Stage {
     openning,
@@ -380,6 +379,7 @@ class Game {
 	passedsecondtime: i32;
 	passedminisecondtime: i32;
     maxpassedminisecondtime: i32;
+    maxpassedminisecondtime_draw: i32;
 
 	constructor() {
 		this.stage = Stage.openning;
@@ -404,7 +404,8 @@ class Game {
 		this.startminisecondtime = jsDatenow();
 		this.passedsecondtime = this.startminisecondtime;
 		this.passedminisecondtime = this.startminisecondtime;
-        this.maxpassedminisecondtime = this.passedminisecondtime;
+        this.maxpassedminisecondtime = 0;
+        this.maxpassedminisecondtime_draw = 0;
 	    let _boss = new Boss(180, 60, 1, 0, BOSS_WIDTH, BOSS_HEIGHT, BOSS_MAX_HP);
 		this.bosses.push(_boss);
 	}
@@ -435,6 +436,7 @@ class Game {
 		this.passedsecondtime = this.startminisecondtime;
 		this.passedminisecondtime = this.startminisecondtime;
         this.maxpassedminisecondtime = 0;
+        this.maxpassedminisecondtime_draw = 0;
 	}
     /**
     * mouse evnet
@@ -639,9 +641,11 @@ class Game {
 				jsFillText('Congratuations!', 260, 420);
 				jsFillText('Your clear time: ' + this.getpassedtime() + ' s.', 200, 500);
 				jsSetFillStyle(LIGHT_GREEN_COLOR);
-				jsFillText('Max process time: ' + this.maxpassedminisecondtime.toString() + ' ms.', 180, 600);
+				jsFillText('max update time: ' + this.maxpassedminisecondtime.toString() + ' ms.', 180, 600);
+				jsFillText('max draw time:    ' + this.maxpassedminisecondtime_draw.toString() + ' ms.', 180, 650);
 				break;
 			case Stage.playing:
+                let _startprocesssecondtime = jsDatenow();
 				// Draw boss
 				this.bosses[0].draw();
 				// Draw bullets
@@ -664,6 +668,7 @@ class Game {
 				jsSetFillStyle(LIGHT_GREEN_COLOR);
 				let _bullet_number = this.bullets.length.toString();
 				jsFillText("Bullets: " + _bullet_number, 30, 90);
+				this.maxpassedminisecondtime_draw = max(jsDatenow() - _startprocesssecondtime, this.maxpassedminisecondtime_draw);
 		}
 	}
     // time
@@ -717,22 +722,21 @@ const game = new Game();
 export function animationFrameHandler(): void {
 
     let timestamp = jsDatenow();
-    let delta = Math.floor((timestamp - last_frame) as f32); 
-
+    let delta = timestamp - last_frame; 
+    //while(delta >= SKIP_DRAW_FRAME){
     while(delta >= 0){
         game.update();
-        delta -= 1000.0 / FPS;
+        delta -= SKIP_DRAW_FRAME;
     }
 
     // draw
 
     jsClearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
     game.draw();
-
-
     last_frame = timestamp;
 
-    // next frame
+    // next frame display
 
     jsRequestAnimationFrame();
 }
